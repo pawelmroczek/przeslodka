@@ -2,6 +2,7 @@ import {
   Icon,
   LogoContainer,
   StyledHeading,
+  StyledLink,
   StyledLogo,
   StyledNav,
   StyledUl,
@@ -24,16 +25,16 @@ const Navigation = () => (
         <li>
           <a href="https://www.instagram.com/przeslodka_torty/"><FacebookIcon/></a>
         </li>
-        <li>kontakt</li>
+        <li><StyledLink>kontakt</StyledLink></li>
       </StyledUl>
       <LogoContainer>
         <StyledLogo src={logo} alt="Przesłodka logo" />
         <StyledHeading>Przesłodka</StyledHeading>
       </LogoContainer>
       <StyledUl>
-        <li>torty</li>
-        <li>wypieki</li>
-        <li>cennik</li>
+        <li><StyledLink>torty</StyledLink></li>
+        <li><StyledLink>wypieki</StyledLink></li>
+        <li><StyledLink>cennik</StyledLink></li>
       </StyledUl>
     </StyledNav>
   </Wrapper>
