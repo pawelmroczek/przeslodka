@@ -70,6 +70,8 @@ export const StyledHeading = styled.span`
   font-size: 40px;
 `;
 export const StyledLink = styled.span`
+  margin-right:10px;
+
   &:hover {
     border-bottom: 1px white solid;
   }
