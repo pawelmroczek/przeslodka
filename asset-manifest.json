@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/przeslodka/static/css/main.ee712054.css",
+    "main.js": "/przeslodka/static/js/main.da0d5a94.js",
+    "static/js/787.8e3d950d.chunk.js": "/przeslodka/static/js/787.8e3d950d.chunk.js",
+    "static/media/logo.jpeg": "/przeslodka/static/media/logo.f3d3e2e90895066ed113.jpeg",
+    "index.html": "/przeslodka/index.html",
+    "static/media/facebook-icon.svg": "/przeslodka/static/media/facebook-icon.c8565937faa19625aee24dd477275e12.svg",
+    "main.ee712054.css.map": "/przeslodka/static/css/main.ee712054.css.map",
+    "main.da0d5a94.js.map": "/przeslodka/static/js/main.da0d5a94.js.map",
+    "787.8e3d950d.chunk.js.map": "/przeslodka/static/js/787.8e3d950d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ee712054.css",
+    "static/js/main.da0d5a94.js"
+  ]
+}
