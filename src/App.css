@@ -24,6 +24,15 @@
   color: white;
 }
 
+html {
+  box-sizing: border-box;
+}
+
+*, ::after, ::before {
+  box-sizing: inherit;
+}
+
+
 .App-link {
   color: #61dafb;
 }
