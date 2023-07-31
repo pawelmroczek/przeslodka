@@ -63,7 +63,7 @@ export const StyledUl = styled.ul`
   
 `;
 
-export const StyledHeading = styled.span`
+export const StyledHeading = styled.h1`
   padding-top: 20px;
   font-family: "Zeyada", cursive;
   margin-left: 10px;

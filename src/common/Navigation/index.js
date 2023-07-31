@@ -18,12 +18,12 @@ const Navigation = () => (
   <Wrapper>
     <StyledNav>
       <StyledUl icons>
-        <li><a href="https://www.instagram.com/przeslodka_torty/"><TiktokIcon/></a></li>
+        <li><a href="https://www.tiktok.com/@przeslodka_torty"><TiktokIcon/></a></li>
         <li>
          <a href="https://www.instagram.com/przeslodka_torty/"> <InstagramIcon /></a>
         </li>
         <li>
-          <a href="https://www.instagram.com/przeslodka_torty/"><FacebookIcon/></a>
+          <a href="https://www.facebook.com/przeslodkatorty"><FacebookIcon/></a>
         </li>
         <li><StyledLink>kontakt</StyledLink></li>
       </StyledUl>
