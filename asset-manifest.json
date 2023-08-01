@@ -1,18 +1,19 @@
 {
   "files": {
     "main.css": "/przeslodka/static/css/main.21868495.css",
-    "main.js": "/przeslodka/static/js/main.85707e87.js",
+    "main.js": "/przeslodka/static/js/main.51db7642.js",
     "static/js/787.8e3d950d.chunk.js": "/przeslodka/static/js/787.8e3d950d.chunk.js",
     "static/media/header-background.jpg": "/przeslodka/static/media/header-background.fa3e1c4e0e6e687174da.jpg",
+    "static/media/IMG_8702.jpg": "/przeslodka/static/media/IMG_8702.663998b15ecdf13fd56d.jpg",
     "static/media/logo.jpeg": "/przeslodka/static/media/logo.f3d3e2e90895066ed113.jpeg",
     "index.html": "/przeslodka/index.html",
     "static/media/facebook-icon.svg": "/przeslodka/static/media/facebook-icon.c8565937faa19625aee24dd477275e12.svg",
     "main.21868495.css.map": "/przeslodka/static/css/main.21868495.css.map",
-    "main.85707e87.js.map": "/przeslodka/static/js/main.85707e87.js.map",
+    "main.51db7642.js.map": "/przeslodka/static/js/main.51db7642.js.map",
     "787.8e3d950d.chunk.js.map": "/przeslodka/static/js/787.8e3d950d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.21868495.css",
-    "static/js/main.85707e87.js"
+    "static/js/main.51db7642.js"
   ]
 }
