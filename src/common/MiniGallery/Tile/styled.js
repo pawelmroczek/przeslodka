@@ -5,10 +5,10 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  //border: 1px solid black;
   background-color:#f5e1e1;
-  //padding-bottom:10px;
   width: 30%;
+  box-shadow: 0px 2px 8px 0px rgba(186, 199, 213, 0.3);
+
 
   @media(max-width: ${({theme})=>theme.breakpoints.phoneMedia}px){
     width:80%;
