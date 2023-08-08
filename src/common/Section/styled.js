@@ -4,12 +4,18 @@ export const StyledSection = styled.section`
   color: white;
   border-top: 1px solid white;
   padding-top: 25px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  
 `;
 
 export const StyledTitle = styled.h2`
+  
   color: black;
   font-weight:400;
   margin: 0;
+  
   font-size: 30px;
   text-align: center;
   text-transform: uppercase;
@@ -21,8 +27,9 @@ export const StyledTitle = styled.h2`
 export const TitleContainer = styled.div`
   display:flex;
   justify-content:center;
-  //gap:10px;
+  width:100%;
   align-items:center;
+  margin-bottom:20px;
 `
 
 export const Line = styled.div`
