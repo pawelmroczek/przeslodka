@@ -41,7 +41,7 @@ export const StyledUl = styled.ul`
   text-transform: uppercase;
   font-weight: 500;
   font-size: 20px;
-
+  text-align:center;
   @media (max-width: ${({ theme }) => theme.breakpoints.phoneMedia}px) {
     flex-direction: column;
   }
@@ -71,6 +71,7 @@ export const StyledHeading = styled.h1`
 `;
 export const StyledLink = styled.span`
   margin-right:10px;
+  
 
   &:hover {
     border-bottom: 1px white solid;

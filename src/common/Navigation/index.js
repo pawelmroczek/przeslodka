@@ -33,7 +33,7 @@ const Navigation = () => (
       </LogoContainer>
       <StyledUl>
         <li><StyledLink>torty</StyledLink></li>
-        <li><StyledLink>wypieki</StyledLink></li>
+        <li><StyledLink>słodki stół</StyledLink></li>
         <li><StyledLink>cennik</StyledLink></li>
       </StyledUl>
     </StyledNav>
