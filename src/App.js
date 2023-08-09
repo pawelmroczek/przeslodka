@@ -9,6 +9,7 @@ import Section from "./common/Section";
 import Paragraph from "./common/Paragraph";
 import MiniGallery from "./common/MiniGallery";
 import VerticalSection from "./common/VerticalSection";
+import Footer from "./common/Footer";
 
 function App() {
   return (
@@ -37,7 +38,7 @@ function App() {
         title={"Składniki"}
         text={"W naszych tortach nie używamy gotowych mieszanek, ulepszaczy, jajek w proszku, margaryny i utwardzonych tłuszczów roślinnych. Tylko naturalne składniki! Dla alergików na życzenie wykluczamy alergeny i produkty mogące wywoływać nietolerancje pokarmowe. Dajemy Państwu możliwość wybrania własnych kompozycji smaków i zdobień. Każdy tort jest dzięki temu unikalny."}
       />
-      
+      <Footer/>
       
     </ThemeProvider>
   );
