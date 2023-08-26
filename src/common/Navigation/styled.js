@@ -19,7 +19,6 @@ export const LogoContainer = styled.div`
   align-items: center;
   display: flex;
   justify-content: center;
-  width:50%;
   @media (max-width: ${({ theme }) => theme.breakpoints.phoneMedia}px) {
     order: -1;
   }

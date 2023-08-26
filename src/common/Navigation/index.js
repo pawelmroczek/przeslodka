@@ -7,11 +7,11 @@ import {
   StyledUl,
   Wrapper,
 } from "./styled";
-import logo from "../../images/logo.jpeg";
-import logo_text from "../../images/logo_tekst.jpeg"
+
 import { FacebookIcon } from "../Icons/FacebookIcon";
 import { InstagramIcon } from "../Icons/InstagramIcon";
 import { TiktokIcon } from "../Icons/TiktokIcon";
+import Logo from "../Logo";
 
 const Navigation = () => (
   <Wrapper>
@@ -26,10 +26,7 @@ const Navigation = () => (
         </li>
         <li><StyledLink>kontakt</StyledLink></li>
       </StyledUl>
-      <LogoContainer>
-        <StyledLogo src={logo} alt="Przesłodka logo" />
-        <LogoText src={logo_text} alt="Przesłodka, pracownia tortów i deserów"/>
-      </LogoContainer>
+      <Logo/>
       <StyledUl>
         <li><StyledLink>torty</StyledLink></li>
         <li><StyledLink>słodki stół</StyledLink></li>
