@@ -4,13 +4,14 @@ import { StyledLink } from "../styled";
 import { FacebookIcon } from "../../Icons/FacebookIcon";
 import { InstagramIcon } from "../../Icons/InstagramIcon";
 import { TiktokIcon } from "../../Icons/TiktokIcon";
+import hamburgerIcon from "../../../images/hamburger-icon.png"
 
 const HamburgerMenu = () => {
   const [hidden, setHidden] = useState(true);
 
   return (
     <Wrapper>
-      <button onClick={()=>{setHidden(hidden=>hidden=!hidden)}}>---</button>
+      <img width="60px" height="60px" src={hamburgerIcon} onClick={()=>{setHidden(hidden=>hidden=!hidden)}}/>
       <StyledUl hidden={hidden}>
         <StyledIteam>
           <StyledLink>torty</StyledLink>

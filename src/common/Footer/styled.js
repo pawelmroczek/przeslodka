@@ -52,7 +52,7 @@ export const Container = styled.div`
 `;
 
 export const Email = styled.a`
-  font-size:40px;
+  font-size:30px;
   font-weight:700;
   margin:40px;
   text-decoration:none;

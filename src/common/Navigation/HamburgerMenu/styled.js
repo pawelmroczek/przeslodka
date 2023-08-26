@@ -23,9 +23,6 @@ export const StyledIteam = styled.li`
 export const StyledUl = styled.ul`
   list-style: none;
   padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
   gap: 10px;
   text-transform: uppercase;
   font-weight: 500;
@@ -35,7 +32,7 @@ export const StyledUl = styled.ul`
 
   @media (max-width: ${({ theme }) => theme.breakpoints.phoneMedia}px) {
     margin-right:-16px;
-    margin-top: 60px;
+    margin-top: 80px;
     font-size: 30px;
     display: inline;
     position: absolute;

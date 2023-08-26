@@ -12,5 +12,5 @@ export const StyledLogo = styled.img`
 `;
 
 export const LogoText = styled.img`
- width: 100px;
+ width: 180px;
 `
