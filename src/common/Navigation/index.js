@@ -1,7 +1,6 @@
 import {
-  Icon,
   LogoContainer,
-  StyledHeading,
+  LogoText,
   StyledLink,
   StyledLogo,
   StyledNav,
@@ -9,10 +8,10 @@ import {
   Wrapper,
 } from "./styled";
 import logo from "../../images/logo.jpeg";
-import facebookLogo from "../../images/facebook-icon.svg";
-import { FacebookIcon } from "./Icons/FacebookIcon";
-import { InstagramIcon } from "./Icons/InstagramIcon";
-import { TiktokIcon } from "./Icons/TiktokIcon";
+import logo_text from "../../images/logo_tekst.jpeg"
+import { FacebookIcon } from "../Icons/FacebookIcon";
+import { InstagramIcon } from "../Icons/InstagramIcon";
+import { TiktokIcon } from "../Icons/TiktokIcon";
 
 const Navigation = () => (
   <Wrapper>
@@ -29,7 +28,7 @@ const Navigation = () => (
       </StyledUl>
       <LogoContainer>
         <StyledLogo src={logo} alt="Przesłodka logo" />
-        <StyledHeading>Przesłodka</StyledHeading>
+        <LogoText src={logo_text} alt="Przesłodka, pracownia tortów i deserów"/>
       </LogoContainer>
       <StyledUl>
         <li><StyledLink>torty</StyledLink></li>
