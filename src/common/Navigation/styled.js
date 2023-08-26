@@ -1,4 +1,4 @@
-import { css, styled } from "styled-components";
+import { css, styled } from "styled-components"
 
 export const Wrapper = styled.div`
   background-color: ${({ theme }) => theme.colors.pinkFlare};
@@ -7,11 +7,13 @@ export const Wrapper = styled.div`
 `;
 
 export const StyledNav = styled.nav`
+  padding: 5px;
+  width:100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   @media (max-width: ${({ theme }) => theme.breakpoints.phoneMedia}px) {
-    flex-direction: column;
+    //align-items:flex-start;
   }
 `;
 
@@ -19,9 +21,6 @@ export const LogoContainer = styled.div`
   align-items: center;
   display: flex;
   justify-content: center;
-  @media (max-width: ${({ theme }) => theme.breakpoints.phoneMedia}px) {
-    order: -1;
-  }
 `;
 
 export const StyledLogo = styled.img`
@@ -29,9 +28,7 @@ export const StyledLogo = styled.img`
   width: 80px;
 `;
 
-export const LogoText = styled.img`
- width: 200px;
-`
+
 
 export const StyledUl = styled.ul`
   list-style: none;
@@ -44,9 +41,9 @@ export const StyledUl = styled.ul`
   text-transform: uppercase;
   font-weight: 500;
   font-size: 20px;
-  text-align:center;
+  text-align: center;
   @media (max-width: ${({ theme }) => theme.breakpoints.phoneMedia}px) {
-    flex-direction: column;
+    display: none;
   }
 
   ${({ icons }) =>
@@ -54,16 +51,24 @@ export const StyledUl = styled.ul`
     css`
       justify-content: flex-start;
       @media (max-width: ${({ theme }) => theme.breakpoints.phoneMedia}px) {
-        flex-direction: row;
-        justify-content:center;
-        flex-wrap:wrap-reverse;
-        width:30%;
-        order:1;
-        gap:15px;
+        display: none;
       }
     `}
 
-  
+  ${({ hamburger }) =>
+    hamburger &&
+    css`
+      display: none;
+      @media (max-width: ${({ theme }) => theme.breakpoints.phoneMedia}px) {
+        margin-top: 60px;
+        font-size: 30px;
+        display: inline;
+        position: absolute;
+        text-align: left;
+        width: auto;
+        background-color: ${({ theme }) => theme.colors.pinkFlare};
+      }
+    `}
 `;
 
 export const StyledHeading = styled.h1`
@@ -73,8 +78,7 @@ export const StyledHeading = styled.h1`
   font-size: 40px;
 `;
 export const StyledLink = styled.span`
-  margin-right:10px;
-  
+  margin-right: 10px;
 
   &:hover {
     border-bottom: 1px white solid;

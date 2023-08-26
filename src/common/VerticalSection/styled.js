@@ -1,4 +1,4 @@
-import { styled } from "styled-components";
+import  styled  from "styled-components";
 import image from "../../images/test.jpeg"
 
 export const StyledSection = styled.section`

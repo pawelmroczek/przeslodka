@@ -7,7 +7,7 @@ import {
   StyledUl,
   Wrapper,
 } from "./styled";
-
+import HamburgerMenu from "./HamburgerMenu";
 import { FacebookIcon } from "../Icons/FacebookIcon";
 import { InstagramIcon } from "../Icons/InstagramIcon";
 import { TiktokIcon } from "../Icons/TiktokIcon";
@@ -27,6 +27,7 @@ const Navigation = () => (
         <li><StyledLink>kontakt</StyledLink></li>
       </StyledUl>
       <Logo/>
+      <HamburgerMenu/>
       <StyledUl>
         <li><StyledLink>torty</StyledLink></li>
         <li><StyledLink>słodki stół</StyledLink></li>
