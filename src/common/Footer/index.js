@@ -16,9 +16,9 @@ import logo from "../../images/logo.jpeg";
 
 const Footer = () => (
   <StyledFooter>
-    <Info>
+    {/* <Info>
     Terminy realizacji ok. 3-4 dni.
-    </Info>
+    </Info> */}
     <Wrapper>
     <Container>
       <LogoContainer>
@@ -31,7 +31,7 @@ const Footer = () => (
       <Email href="mailto:iza@przeslodka.pl">iza@przeslodka.pl</Email><br/>
       <Phone href="602351865">Tel: 602-351-865</Phone>
     </Container>
-    <BackgroundImg/>
+    
   </Wrapper>
   </StyledFooter>
 );
