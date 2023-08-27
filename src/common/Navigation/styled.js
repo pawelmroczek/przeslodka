@@ -79,7 +79,6 @@ export const StyledHeading = styled.h1`
 `;
 export const StyledLink = styled.span`
   margin-right: 10px;
-
   &:hover {
     border-bottom: 1px white solid;
   }

@@ -6,7 +6,9 @@ export const Wrapper = styled.div`
   color: white;
 `;
 
-export const StyledFooter = styled.footer``;
+export const StyledFooter = styled.footer`
+margin-top:20px;
+`;
 
 export const BackgroundImg = styled.div`
   background-image: url(${cake});

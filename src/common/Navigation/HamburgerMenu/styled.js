@@ -10,7 +10,7 @@ export const Wrapper = styled.div`
 `;
 export const StyledIteam = styled.li`
   margin: 20px;
-  text-align: right;
+  text-align: left;
   ${({ icon }) =>
     icon &&
     css`

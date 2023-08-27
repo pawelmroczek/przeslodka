@@ -16,9 +16,6 @@ import logo from "../../images/logo.jpeg";
 
 const Footer = () => (
   <StyledFooter>
-    {/* <Info>
-    Terminy realizacji ok. 3-4 dni.
-    </Info> */}
     <Wrapper>
     <Container>
       <LogoContainer>
