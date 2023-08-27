@@ -27,6 +27,7 @@ export const StyledSection = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top:20px;
   /* background-image:url(${test});
   background-position:center;
   background-size:cover;

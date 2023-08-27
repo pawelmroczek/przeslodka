@@ -4,9 +4,10 @@ import slodki from "../../images/ciastka14.jpg"
 import babeczki from "../../images/babeczki1.jpg"
 
 import Tile from "./Tile";
+import TitleWithLines from "../TitleWithLines";
 const MiniGallery = ({ title, text, content }) => (
   <StyledSection>
-    <StyledTitle>{title}</StyledTitle>
+    <TitleWithLines title={title}/>
     <StyledParagraph>
       {text}
     </StyledParagraph>
