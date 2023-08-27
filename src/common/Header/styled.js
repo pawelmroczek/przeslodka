@@ -3,7 +3,6 @@ import backgroundimg from "../../images/header-background.jpg";
 
 export const FirstImg = styled.div`
   background-image: url(${backgroundimg});
-
   background-size: cover;
   background-position: center;
  

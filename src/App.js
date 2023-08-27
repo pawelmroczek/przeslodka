@@ -15,9 +15,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <Navigation />
-      <FirstImg>
-        <Header text={<HeaderText />} />
-      </FirstImg>
+      <Header text={<HeaderText />} />
       <Section
         title={"Torty"}
         content={
@@ -28,16 +26,17 @@ function App() {
           />
         }
       />
+        <VerticalSection
+        title={"Składniki"}
+        text={"W naszych tortach nie używamy gotowych mieszanek, ulepszaczy, jajek w proszku, margaryny i utwardzonych tłuszczów roślinnych. Tylko naturalne składniki! Dla alergików na życzenie wykluczamy alergeny i produkty mogące wywoływać nietolerancje pokarmowe. Dajemy Państwu możliwość wybrania własnych kompozycji smaków i zdobień. Każdy tort jest dzięki temu unikalny."}
+      />
       <MiniGallery
         title={"/ Oferta"}
         text={
           "Zawsze stawiamy na pierwszym miejscu zadowolenie Klienta, a więc dostosowujemy ofertę do Jego potrzeb. Terminy na torty artystyczne to tydzień lub kilka dni w zależności od trudności wykonania. Przy krótkich terminach od zamówienia na torty do realizacji, prosimy o kontakt telefoniczny w celu usprawnienia działania."
         }
       />
-      <VerticalSection
-        title={"Składniki"}
-        text={"W naszych tortach nie używamy gotowych mieszanek, ulepszaczy, jajek w proszku, margaryny i utwardzonych tłuszczów roślinnych. Tylko naturalne składniki! Dla alergików na życzenie wykluczamy alergeny i produkty mogące wywoływać nietolerancje pokarmowe. Dajemy Państwu możliwość wybrania własnych kompozycji smaków i zdobień. Każdy tort jest dzięki temu unikalny."}
-      />
+    
       <Footer/>
       
     </ThemeProvider>
