@@ -22,13 +22,13 @@ const LastCakes = () => {
       <StyledTitle>/ ostatnie torty</StyledTitle>
       <GalleryContainer>
         <StyledImg
-          src={"przeslodka/images/torty/" + BAZA.torty[counter].plik}
+          src={"https://pawelmroczek.github.io/przeslodka/images/torty/" + BAZA.torty[counter].plik}
         />
         <StyledImg
-          src={"przeslodka/images/torty/" + BAZA.torty[counter -1].plik}
+          src={"https://pawelmroczek.github.io/przeslodka/images/torty/" + BAZA.torty[counter -1].plik}
         />
         <StyledImg
-          src={"przeslodka/images/torty/" + BAZA.torty[counter-2].plik}
+          src={"https://pawelmroczek.github.io/przeslodka/images/torty/" + BAZA.torty[counter-2].plik}
         />
       </GalleryContainer>
       <ButtonContainer>
