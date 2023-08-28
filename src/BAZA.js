@@ -25,9 +25,9 @@ export const BAZA = {
     nawigacja: {
       logo: <Logo />,
       linki: [
-        { content: "torty" },
-        { content: "słodki stół" },
-        { content: "cennik" },
+        { content: "torty", href:"torty" },
+        { content: "słodki stół", href:"slodki-stol"},
+        { content: "cennik" , href:"/cennik"},
       ],
       ikonki: [
         {
