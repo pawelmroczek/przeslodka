@@ -13,7 +13,7 @@ import Logo from "../Logo";
 import { BAZA } from "../../BAZA";
 
 const Footer = () => (
-  <StyledFooter>
+  <StyledFooter id="kontakt">
     <Wrapper>
       <Container>
         <Logo />

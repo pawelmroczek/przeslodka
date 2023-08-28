@@ -1,11 +1,7 @@
-import {
-  StyledLink,
-  StyledNav,
-  StyledUl,
-  Wrapper,
-} from "./styled";
+import { StyledLink, StyledNav, StyledNavLink, StyledUl, Wrapper } from "./styled";
 import HamburgerMenu from "./HamburgerMenu";
 import { BAZA } from "../../BAZA";
+import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
 
 const Navigation = ({ ikony, linki }) => (
   <Wrapper>
@@ -17,15 +13,16 @@ const Navigation = ({ ikony, linki }) => (
           </li>
         ))}
         <li>
-          <StyledLink>kontakt</StyledLink>
+          <StyledLink href="#kontakt">kontakt</StyledLink>
         </li>
       </StyledUl>
-      {BAZA.strona.nawigacja.logo}
+      <NavLink to="/"> {BAZA.strona.nawigacja.logo}</NavLink>
+          
       <HamburgerMenu />
       <StyledUl>
         {linki.map((link) => (
           <li>
-            <StyledLink>{link.content}</StyledLink>
+            <StyledLink><StyledNavLink to={link.href}>{link.content}</StyledNavLink></StyledLink>
           </li>
         ))}
       </StyledUl>

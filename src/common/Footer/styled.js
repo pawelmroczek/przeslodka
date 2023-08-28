@@ -12,7 +12,7 @@ export const Wrapper = styled.div`
 `;
 
 export const StyledFooter = styled.footer`
-  margin-top: 20px;
+  //margin-top: 20px;
 `;
 
 export const LinksContainer = styled.div`

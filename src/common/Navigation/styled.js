@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
 import { css, styled } from "styled-components";
 
 export const Wrapper = styled.div`
@@ -75,9 +76,16 @@ export const StyledHeading = styled.h1`
   margin-left: 10px;
   font-size: 40px;
 `;
-export const StyledLink = styled.span`
+export const StyledLink = styled.a`
+  text-decoration: none;
+  color: white;
   margin-right: 10px;
   &:hover {
     border-bottom: 1px white solid;
   }
+`;
+
+export const StyledNavLink = styled(NavLink)`
+  text-decoration: none;
+  color: white;
 `;
