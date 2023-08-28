@@ -1,6 +1,6 @@
 import { BAZA } from "../../../BAZA";
 import { ButtonContainer, StyledButton, StyledTitle } from "./styled";
-import { GalleryContainer, StyledImg, InfoDiv } from "./styled";
+import { GalleryContainer, StyledImg } from "./styled";
 import { useState } from "react";
 const LastCakes = () => {
   const [counter, setCounter] = useState(BAZA.torty.length-1);

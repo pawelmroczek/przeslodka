@@ -11,7 +11,7 @@ const HamburgerMenu = () => {
 
   return (
     <Wrapper>
-      <img width="60px" height="60px" src={hamburgerIcon} onClick={()=>{setHidden(hidden=>hidden=!hidden)}}/>
+      <img width="60px" height="60px" alt="" src={hamburgerIcon} onClick={()=>{setHidden(hidden=>hidden=!hidden)}}/>
       <StyledUl hidden={hidden}>
         <StyledIteam>
           <StyledLink>torty</StyledLink>

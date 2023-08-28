@@ -1,4 +1,4 @@
-import { Container, StyledParagraph, StyledSection, StyledTitle } from "./styled";
+import { Container, StyledParagraph, StyledSection } from "./styled";
 import image from "../../images/IMG_8702.jpg"
 import slodki from "../../images/ciastka14.jpg"
 import babeczki from "../../images/babeczki1.jpg"

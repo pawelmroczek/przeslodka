@@ -1,5 +1,5 @@
 import TitleWithLines from "../TitleWithLines";
-import { Line, StyledSection, StyledTitle, TitleContainer } from "./styled";
+import { StyledSection } from "./styled";
 
 const Section = ({title,content}) =>(
   <StyledSection>

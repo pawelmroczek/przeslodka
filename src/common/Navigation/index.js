@@ -1,17 +1,10 @@
 import {
-  LogoContainer,
-  LogoText,
   StyledLink,
-  StyledLogo,
   StyledNav,
   StyledUl,
   Wrapper,
 } from "./styled";
 import HamburgerMenu from "./HamburgerMenu";
-import { FacebookIcon } from "../Icons/FacebookIcon";
-import { InstagramIcon } from "../Icons/InstagramIcon";
-import { TiktokIcon } from "../Icons/TiktokIcon";
-import Logo from "../Logo";
 import { BAZA } from "../../BAZA";
 
 const Navigation = ({ ikony, linki }) => (
