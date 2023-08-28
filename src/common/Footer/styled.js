@@ -4,41 +4,39 @@ import cake from "../../images/cake.webp";
 export const Wrapper = styled.div`
   display: flex;
   color: white;
-`;
-
-export const StyledFooter = styled.footer`
-margin-top:20px;
-`;
-
-export const BackgroundImg = styled.div`
-  background-image: url(${cake});
-  background-position: center;
-  background-size: cover;
-  width: 50%;
-`;
-
-export const Info = styled.div`
-  background-color: black;
-  color: white;
-  font-size:20px;
-  padding:15px;
-`;
-
-export const LogoContainer = styled.div`
-  align-items: center;
-  display: flex;
-  justify-content: center;
+  background-color: ${({ theme }) => theme.colors.pinkFlare};
 
   @media (max-width: ${({ theme }) => theme.breakpoints.phoneMedia}px) {
-    order: -1;
+    flex-direction: column;
   }
 `;
 
-export const StyledHeading = styled.h1`
-  padding-top: 20px;
-  font-family: "Zeyada", cursive;
-  margin-left: 10px;
-  font-size: 40px;
+export const StyledFooter = styled.footer`
+  margin-top: 20px;
+`;
+
+export const LinksContainer = styled.div`
+  background-image: url(${cake});
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  font-size: 25px;
+  @media (max-width: ${({ theme }) => theme.breakpoints.phoneMedia}px) {
+    width: 100%;
+    font-size: 17px;
+  }
+`;
+
+export const StyledUl = styled.ul`
+  background-color: rgb(0, 0, 0, 0.5);
+  padding: 30px;
+  //text-align:center;
+  //display:grid;
+  //grid-template-columns:1fr 1fr ;
+  
 `;
 
 export const StyledLogo = styled.img`
@@ -48,28 +46,41 @@ export const StyledLogo = styled.img`
 
 export const Container = styled.div`
   width: 50%;
-  background-color: ${({ theme }) => theme.colors.pinkFlare};
-  padding:30px;
-  text-align:center;
+  padding: 30px;
+  text-align: center;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.phoneMedia}px) {
+    width: 100%;
+  }
 `;
 
 export const Email = styled.a`
-  font-size:30px;
-  font-weight:700;
-  margin:40px;
-  text-decoration:none;
-  color:white;
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0;
+  text-decoration: none;
+  color: white;
+`;
+
+export const StyledMap = styled.iframe`
+  border: 0;
+  margin-top: 20px;
 `;
 
 export const Phone = styled.a`
-  font-size:30px;
-  font-weight:700;
-  margin:40px;
-  text-decoration:none;
-  color:white;
-`
-export const Name = styled(StyledHeading)`
-  padding:0;
-  margin:0;
-  font-size:60px;
-`
+  font-size: 30px;
+  font-weight: 700;
+  margin: 40px;
+  text-decoration: none;
+  color: white;
+  font-family: "Zeyada", cursive;
+`;
+export const Name = styled.h2`
+  padding: 0;
+  font-family: "Zeyada", cursive;
+  margin: 0;
+  font-size: 40px;
+  padding: 0;
+  margin: 20px 0 0px;
+  font-size: 40px;
+`;

@@ -5,6 +5,21 @@ import { FacebookIcon } from "./common/Icons/FacebookIcon";
 import { InstagramIcon } from "./common/Icons/InstagramIcon";
 
 export const BAZA = {
+  kategorie: [
+    "torty dziecięce",
+    "torty urodzinowe",
+    "torty weselne",
+    "torty piętrowe",
+    "chleby i bułki",
+    "torty kobiece",
+    "torty na chrzciny",
+    "torty na rocznicę",
+    "torty na roczek",
+    "torty męskie",
+    "torty komunijne",
+    "torty na imprezy firmowe",
+    "ciasta i ciasteczka",
+  ],
   torty: [],
   strona: {
     nawigacja: {
