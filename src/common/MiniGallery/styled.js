@@ -1,18 +1,6 @@
 import { styled } from "styled-components";
 import test from "../../images/test.jpeg"
 
-export const StyledTitle = styled.h2`
-  color: black;
-  font-weight: 400;
-  margin: 10px 0 0 0 ;
-  font-size: 30px;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  //border: 2px solid black;
-  padding: 10px;
-`;
-
 export const StyledParagraph = styled.p`
   text-align: center;
   width: 70%;

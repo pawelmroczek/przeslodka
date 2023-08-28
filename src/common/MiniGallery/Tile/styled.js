@@ -10,7 +10,7 @@ export const Container = styled.div`
   box-shadow: 0px 2px 8px 0px rgba(186, 199, 213, 0.3);
 
 
-  @media(max-width: ${({theme})=>theme.breakpoints.phoneMedia}px){
+  @media(max-width: ${({theme} )=>theme.breakpoints.phoneMedia}px){
     width:80%;
   }
 `;

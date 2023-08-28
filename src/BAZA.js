@@ -20,7 +20,7 @@ export const BAZA = {
     "torty na imprezy firmowe",
     "ciasta i ciasteczka",
   ],
-  torty: [],
+  torty: [{ plik: "IMG_8702.jpg" },{ plik: "IMG_8702.jpg" },{ plik: "IMG_8702.jpg" },{ plik: "IMG_8702.jpg" },{ plik: "IMG_8702.jpg" },{ plik: "IMG_8702.jpg" },{ plik: "babeczki1.jpg" },{ plik: "IMG_8702.jpg" }],
   strona: {
     nawigacja: {
       logo: <Logo />,
