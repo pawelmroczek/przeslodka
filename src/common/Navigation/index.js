@@ -12,26 +12,29 @@ import { FacebookIcon } from "../Icons/FacebookIcon";
 import { InstagramIcon } from "../Icons/InstagramIcon";
 import { TiktokIcon } from "../Icons/TiktokIcon";
 import Logo from "../Logo";
+import { BAZA } from "../../BAZA";
 
-const Navigation = () => (
+const Navigation = ({ ikony, linki }) => (
   <Wrapper>
     <StyledNav>
       <StyledUl icons>
-        <li><a href="https://www.tiktok.com/@przeslodka_torty"><TiktokIcon/></a></li>
+        {ikony.map((ikona) => (
+          <li>
+            <a href={ikona.href}>{ikona.content}</a>
+          </li>
+        ))}
         <li>
-         <a href="https://www.instagram.com/przeslodka_torty/"> <InstagramIcon /></a>
+          <StyledLink>kontakt</StyledLink>
         </li>
-        <li>
-          <a href="https://www.facebook.com/przeslodkatorty"><FacebookIcon/></a>
-        </li>
-        <li><StyledLink>kontakt</StyledLink></li>
       </StyledUl>
-      <Logo/>
-      <HamburgerMenu/>
+      {BAZA.strona.nawigacja.logo}
+      <HamburgerMenu />
       <StyledUl>
-        <li><StyledLink>torty</StyledLink></li>
-        <li><StyledLink>słodki stół</StyledLink></li>
-        <li><StyledLink>cennik</StyledLink></li>
+        {linki.map((link) => (
+          <li>
+            <StyledLink>{link.content}</StyledLink>
+          </li>
+        ))}
       </StyledUl>
     </StyledNav>
   </Wrapper>

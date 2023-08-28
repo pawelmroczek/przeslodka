@@ -3,18 +3,18 @@ import "./App.css";
 import { theme } from "./theme";
 import Navigation from "./common/Navigation";
 import Header from "./common/Header";
-import { FirstImg } from "./common/Header/styled";
 import HeaderText from "./features/homepage/HeaderText";
 import Section from "./common/Section";
 import Paragraph from "./common/Paragraph";
 import MiniGallery from "./common/MiniGallery";
 import VerticalSection from "./common/VerticalSection";
 import Footer from "./common/Footer";
+import { BAZA } from "./BAZA";
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <Navigation />
+      <Navigation ikony={BAZA.strona.nawigacja.ikonki} linki={BAZA.strona.nawigacja.linki}/>
       <Header text={<HeaderText />} />
       <Section
         title={"Torty"}

@@ -1,4 +1,4 @@
-import { css, styled } from "styled-components"
+import { css, styled } from "styled-components";
 
 export const Wrapper = styled.div`
   background-color: ${({ theme }) => theme.colors.pinkFlare};
@@ -8,7 +8,7 @@ export const Wrapper = styled.div`
 
 export const StyledNav = styled.nav`
   padding: 5px;
-  width:100%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -27,8 +27,6 @@ export const StyledLogo = styled.img`
   height: 80px;
   width: 80px;
 `;
-
-
 
 export const StyledUl = styled.ul`
   list-style: none;
