@@ -20,6 +20,10 @@ export const StyledParagraph = styled.p`
   margin:0 0 10px 0;
   //font-weight:700;
   line-height: 140%;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.phoneMedia}px) {
+    font-size:17px;
+  }
 `;
 
 export const StyledSection = styled.section`

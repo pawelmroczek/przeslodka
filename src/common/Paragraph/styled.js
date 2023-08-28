@@ -15,5 +15,6 @@ export const StyledParagraph = styled.p`
     padding:10px;
     text-align:center;
     width:90%;
+    font-size:17px;
   }
   `

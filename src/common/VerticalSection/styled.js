@@ -20,6 +20,7 @@ export const StyledParagraph= styled.p`
   line-height: 140%;
   @media (max-width: ${({ theme }) => theme.breakpoints.phoneMedia}px) {
     padding:10px;
+    font-size:17px;
   }
 `
 
