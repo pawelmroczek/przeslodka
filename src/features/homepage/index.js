@@ -29,7 +29,7 @@ const Homepage = () => (
       }
     />
     <MiniGallery
-      title={"/ Oferta"}
+      title={"Oferta"}
       text={
         "Zawsze stawiamy na pierwszym miejscu zadowolenie Klienta, a więc dostosowujemy ofertę do Jego potrzeb. Terminy na torty artystyczne to tydzień lub kilka dni w zależności od trudności wykonania. Przy krótkich terminach od zamówienia na torty do realizacji, prosimy o kontakt telefoniczny w celu usprawnienia działania."
       }
