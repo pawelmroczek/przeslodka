@@ -11,6 +11,7 @@ import {
   Route,
   Switch,
 } from "react-router-dom/cjs/react-router-dom.min";
+import Cakes from "./features/cakes";
 
 function App() {
   return (
@@ -23,6 +24,9 @@ function App() {
         <Switch>
           <Route path="/cennik">
             <Menu />
+          </Route>
+          <Route path="/torty">
+            <Cakes />
           </Route>
           <Route path="/">
             <Homepage />
