@@ -20,14 +20,63 @@ export const BAZA = {
     "torty na imprezy firmowe",
     "ciasta i ciasteczka",
   ],
-  torty: [{ plik: "IMG_8702.jpg" },{ plik: "IMG_8702.jpg" },{ plik: "IMG_8702.jpg" },{ plik: "IMG_8702.jpg" },{ plik: "IMG_8702.jpg" },{ plik: "IMG_8702.jpg" },{ plik: "babeczki1.jpg" },{ plik: "IMG_8702.jpg" }],
+  torty: [
+    {
+      plik: "IMG_8702.jpg",
+      tytuł: "Tort z kwiatami",
+      opis: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultricies efficitur mi quis dignissim. Maecenas molestie eu quam a rutrum. Ut feugiat neque quis auctor rutrum.",
+      kategorie:["torty weselne"],
+    },
+    {
+      plik: "IMG_8702.jpg",
+      tytuł: "Tort z kwiatami",
+      opis: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultricies efficitur mi quis dignissim. Maecenas molestie eu quam a rutrum. Ut feugiat neque quis auctor rutrum.",
+      kategorie:["torty na roczek"],
+    },
+    {
+      plik: "IMG_8702.jpg",
+      tytuł: "Tort z kwiatami",
+      opis: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultricies efficitur mi quis dignissim. Maecenas molestie eu quam a rutrum. Ut feugiat neque quis auctor rutrum.",
+      kategorie: ["torty na imprezy firmowe"],
+    },
+    {
+      plik: "IMG_8702.jpg",
+      tytuł: "Tort z kwiatami",
+      opis: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultricies efficitur mi quis dignissim. Maecenas molestie eu quam a rutrum. Ut feugiat neque quis auctor rutrum.",
+      kategorie:["torty na roczek"],
+    },
+    {
+      plik: "IMG_8702.jpg",
+      tytuł: "Tort z kwiatami",
+      opis: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultricies efficitur mi quis dignissim. Maecenas molestie eu quam a rutrum. Ut feugiat neque quis auctor rutrum.",
+      kategorie:["torty na roczek"],
+    },
+    {
+      plik: "IMG_8702.jpg",
+      tytuł: "Tort z kwiatami",
+      opis: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultricies efficitur mi quis dignissim. Maecenas molestie eu quam a rutrum. Ut feugiat neque quis auctor rutrum.",
+      kategorie:["torty na roczek"],
+    },
+    {
+      plik: "babeczki1.jpg",
+      tytuł: "Tort z kwiatami",
+      opis: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultricies efficitur mi quis dignissim. Maecenas molestie eu quam a rutrum. Ut feugiat neque quis auctor rutrum.",
+      kategorie:["torty weselne"],
+    },
+    {
+      plik: "IMG_8702.jpg",
+      tytuł: "Tort z kwiatami",
+      opis: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultricies efficitur mi quis dignissim. Maecenas molestie eu quam a rutrum. Ut feugiat neque quis auctor rutrum.",
+      kategorie:["torty weselne"],
+    },
+  ],
   strona: {
     nawigacja: {
       logo: <Logo />,
       linki: [
-        { content: "torty", href:"torty" },
-        { content: "słodki stół", href:"slodki-stol"},
-        { content: "cennik" , href:"/cennik"},
+        { content: "torty", href: "/torty" },
+        { content: "słodki stół", href: "/slodki-stol" },
+        { content: "cennik", href: "/cennik" },
       ],
       ikonki: [
         {
