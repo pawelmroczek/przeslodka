@@ -26,48 +26,56 @@ export const BAZA = {
       tytuł: "Tort z kwiatami",
       opis: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultricies efficitur mi quis dignissim. Maecenas molestie eu quam a rutrum. Ut feugiat neque quis auctor rutrum.",
       kategorie:["torty weselne"],
+      id:"1"
     },
     {
       plik: "IMG_8702.jpg",
       tytuł: "Tort z kwiatami",
       opis: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultricies efficitur mi quis dignissim. Maecenas molestie eu quam a rutrum. Ut feugiat neque quis auctor rutrum.",
       kategorie:["torty na roczek"],
+      id:"2"
     },
     {
       plik: "IMG_8702.jpg",
       tytuł: "Tort z kwiatami",
       opis: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultricies efficitur mi quis dignissim. Maecenas molestie eu quam a rutrum. Ut feugiat neque quis auctor rutrum.",
       kategorie: ["torty na imprezy firmowe"],
+      id:"3"
     },
     {
       plik: "IMG_8702.jpg",
       tytuł: "Tort z kwiatami",
       opis: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultricies efficitur mi quis dignissim. Maecenas molestie eu quam a rutrum. Ut feugiat neque quis auctor rutrum.",
       kategorie:["torty na roczek"],
+      id:"4"
     },
     {
       plik: "IMG_8702.jpg",
       tytuł: "Tort z kwiatami",
       opis: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultricies efficitur mi quis dignissim. Maecenas molestie eu quam a rutrum. Ut feugiat neque quis auctor rutrum.",
       kategorie:["torty na roczek"],
+      id:"5"
     },
     {
       plik: "IMG_8702.jpg",
       tytuł: "Tort z kwiatami",
       opis: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultricies efficitur mi quis dignissim. Maecenas molestie eu quam a rutrum. Ut feugiat neque quis auctor rutrum.",
       kategorie:["torty na roczek"],
+      id:"6"
     },
     {
       plik: "babeczki1.jpg",
       tytuł: "Tort z kwiatami",
       opis: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultricies efficitur mi quis dignissim. Maecenas molestie eu quam a rutrum. Ut feugiat neque quis auctor rutrum.",
       kategorie:["torty weselne"],
+      id:"7"
     },
     {
       plik: "IMG_8702.jpg",
       tytuł: "Tort z kwiatami",
       opis: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultricies efficitur mi quis dignissim. Maecenas molestie eu quam a rutrum. Ut feugiat neque quis auctor rutrum.",
       kategorie:["torty weselne"],
+      id:"8"
     },
   ],
   strona: {

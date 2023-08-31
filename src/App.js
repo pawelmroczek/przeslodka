@@ -12,8 +12,11 @@ import {
   Switch,
 } from "react-router-dom/cjs/react-router-dom.min";
 import Cakes from "./features/cakes";
+import Cake from "./features/cake";
 
 function App() {
+  const toCake = ({ id,category } = { id: ":id", category: ":category" }) => `/torty/${category}/${id}`;
+
   return (
     <ThemeProvider theme={theme}>
       <HashRouter>
@@ -24,6 +27,9 @@ function App() {
         <Switch>
           <Route path="/cennik">
             <Menu />
+          </Route>
+          <Route path={toCake()}>
+            <Cake/>
           </Route>
           <Route path="/torty">
             <Cakes />

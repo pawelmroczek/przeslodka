@@ -36,6 +36,9 @@ const Cakes = () => {
             }
             title={tort.tytuł}
             paragraph={tort.opis}
+            category={title}
+            id={tort.id}
+            key={tort.id}
           />
         ))}
       </CakesContainer>
