@@ -18,7 +18,7 @@ const Navigation = ({ ikony, linki }) => (
       </StyledUl>
       <NavLink to="/"> {BAZA.strona.nawigacja.logo}</NavLink>
           
-      <HamburgerMenu />
+      <HamburgerMenu ikony={ikony} linki={linki}/>
       <StyledUl>
         {linki.map((link) => (
           <li>
