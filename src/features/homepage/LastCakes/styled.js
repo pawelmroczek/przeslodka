@@ -13,10 +13,12 @@ export const StyledTitle = styled.h2`
 
 export const StyledButton = styled.button`
   border: none;
-  background: none;
-  font-size: 50px;
-  color: darkgray;
+  background:none;
+  /* background: rgb(0,0,0,0.3); */
+  font-size: 70px;
+  color: black;
   cursor: pointer;
+  //text-shadow: -7px -3px 10px rgba(255, 255, 255, 1);
 
   &:hover {
     color: black;
@@ -29,8 +31,9 @@ export const StyledButton = styled.button`
 
 export const ButtonContainer = styled.div`
   display: flex;
-  width: 50%;
-  justify-content: space-around;
+  width: 100%;
+  justify-content: space-between;
+  position:absolute;
 `;
 
 export const GalleryContainer = styled.div`
