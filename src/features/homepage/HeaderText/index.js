@@ -1,6 +1,6 @@
 const HeaderText = () => (
   <>
-    domowe, <br />
+    torty <br />
     artystyczne,
     <br />
     100% naturalne

@@ -20,9 +20,9 @@ padding: 80px;
   }
 `;
 
-export const StyledText = styled.div`
+export const StyledText = styled.h1`
   color: white;
-  
+  margin:0;
   //font-family: "Zeyada", cursive;
   font-size: 50px;
   font-weight: 800;
