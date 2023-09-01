@@ -10,7 +10,6 @@ export const BAZA = {
     "torty urodzinowe",
     "torty weselne",
     "torty piętrowe",
-    "chleby i bułki",
     "torty kobiece",
     "torty na chrzciny",
     "torty na rocznicę",
@@ -18,7 +17,6 @@ export const BAZA = {
     "torty męskie",
     "torty komunijne",
     "torty na imprezy firmowe",
-    "ciasta i ciasteczka",
   ],
   torty: [
     {
