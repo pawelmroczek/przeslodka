@@ -1,5 +1,6 @@
 import { styled } from "styled-components";
 import cake from "../../images/cake.webp";
+import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
 
 export const Wrapper = styled.div`
   display: flex;
@@ -73,14 +74,16 @@ export const Phone = styled.a`
   margin: 40px;
   text-decoration: none;
   color: white;
-  font-family: "Zeyada", cursive;
 `;
 export const Name = styled.h2`
   padding: 0;
-  font-family: "Zeyada", cursive;
   margin: 0;
-  font-size: 40px;
+  font-size: 20px;
   padding: 0;
-  margin: 20px 0 0px;
-  font-size: 40px;
+  margin: 20px 0 20px;
 `;
+
+export const StyledNavLink = styled(NavLink)`
+  text-decoration:none;
+  color:white;
+`

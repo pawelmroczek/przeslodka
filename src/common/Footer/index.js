@@ -6,21 +6,24 @@ import {
   Phone,
   StyledFooter,
   StyledMap,
+  StyledNavLink,
   StyledUl,
   Wrapper,
 } from "./styled";
 import Logo from "../Logo";
 import { BAZA } from "../../BAZA";
+import { Component } from "react";
+import { scrollToTop } from "../scrollToTop";
+
+
 
 const Footer = () => (
   <StyledFooter id="kontakt">
     <Wrapper>
       <Container>
         <Logo />
-
-        <Name>Izabela Mroczek</Name>
+        <Name>Kontakt Przesłodka Torty Piaseczno:</Name>
         <Phone href="602351865">Tel: 602-351-865</Phone>
-
         <br />
         <Email href="mailto:iza@przeslodka.pl">iza@przeslodka.pl</Email>
         <StyledMap
@@ -31,11 +34,12 @@ const Footer = () => (
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
         ></StyledMap>
+        <Name>Wskazówki dojazdu:</Name>
       </Container>
       <LinksContainer>
         <StyledUl>
           {BAZA.kategorie.map((kategoria) => (
-            <li>{kategoria}</li>
+            <li onClick={scrollToTop}><StyledNavLink to={"/torty/" + kategoria }>{kategoria}</StyledNavLink></li>
           ))}
         </StyledUl>
       </LinksContainer>
