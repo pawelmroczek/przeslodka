@@ -7,8 +7,10 @@ import { BAZA } from "./BAZA";
 import Homepage from "./features/homepage";
 import Menu from "./features/menu";
 import {
+  BrowserRouter,
   HashRouter,
   Route,
+  Router,
   Switch,
 } from "react-router-dom/cjs/react-router-dom.min";
 import Cakes from "./features/cakes";
@@ -19,7 +21,7 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <HashRouter>
+      <BrowserRouter>
         <Navigation
           ikony={BAZA.strona.nawigacja.ikonki}
           linki={BAZA.strona.nawigacja.linki}
@@ -39,7 +41,7 @@ function App() {
           </Route>
         </Switch>
         <Footer />
-      </HashRouter>
+      </BrowserRouter>
     </ThemeProvider>
   );
 }
