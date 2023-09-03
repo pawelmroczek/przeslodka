@@ -1,6 +1,6 @@
 import { BAZA } from "../../../BAZA";
 import TitleWithLines from "../../../common/TitleWithLines";
-import { ButtonContainer, StyledButton, StyledTitle } from "./styled";
+import { ButtonContainer, StyledButton } from "./styled";
 import { GalleryContainer, StyledImg } from "./styled";
 import { useState } from "react";
 const LastCakes = () => {

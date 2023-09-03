@@ -1,5 +1,6 @@
 import { styled } from "styled-components";
 import test from "../../images/test.jpeg"
+import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
 
 export const StyledParagraph = styled.p`
   text-align: center;
@@ -29,4 +30,9 @@ export const Container = styled.div`
   gap:10px;
   flex-wrap:wrap;
   width: 80%;
+`;
+
+export const StyledNavLink = styled(NavLink)`
+  text-decoration: none;
+  color: black;
 `;

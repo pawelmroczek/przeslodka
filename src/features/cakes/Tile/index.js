@@ -1,4 +1,3 @@
-import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
 import { Container, StyledImage, StyledNavLink, StyledParagraph, StyledTitle } from "./styled";
 import { scrollToTop } from "../../../common/scrollToTop";
 
