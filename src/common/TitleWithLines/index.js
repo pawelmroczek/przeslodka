@@ -1,9 +1,9 @@
 import { Line, StyledTitle, TitleContainer } from "./styled";
 
-const TitleWithLines = ({title}) => (
+const TitleWithLines = ({title, header}) => (
   <TitleContainer>
       <Line/>
-      <StyledTitle>{title}</StyledTitle>
+      {header ? <StyledTitle as={"h1"}>{title}</StyledTitle> : <StyledTitle>{title}</StyledTitle>}
       <Line/>
   </TitleContainer>
 );
