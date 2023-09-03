@@ -15,14 +15,29 @@ export const StyledImg = styled.img`
   width:100%;
 `
 
-export const StyledTitle = styled.h3`
+export const StyledTitle = styled.h1`
   text-transform: uppercase;
-  font-size: 15px;
+  font-size: 25px;
   text-align: center;
+
+  @media(max-width:${({theme})=>theme.breakpoints.phoneMedia}px){
+    font-size:20px;
+  }
 `;
 
+export const StyledSubtitle = styled.h2`
+ text-transform: uppercase;
+  font-size: 20px;
+  text-align: center;
+  margin:0;
+  padding:0;
+  @media(max-width:${({theme})=>theme.breakpoints.phoneMedia}px){
+    font-size:15px;
+  }
+`
+
 export const StyledParagraph = styled.p`
-  padding: 10px;
+  padding: 0 10px;
 `;
 
 export const StyledNavLink = styled(NavLink)`

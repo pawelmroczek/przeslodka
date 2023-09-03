@@ -8,15 +8,24 @@ import {
   CategoriesContainer,
   Category,
 } from "./styled";
+import { useEffect } from "react";
 
 const Cakes = () => {
   const location = useLocation();
   const category = location.pathname;
   const czesci = category.split('/');
   const title = czesci[2] ? czesci[2] : "torty"
-
   const torty = title === "torty" ? BAZA.torty.slice(0,20) : BAZA.torty.filter(tort => tort.kategorie.includes(title));
   
+  useEffect(()=>{
+    if(document.title!=="Torty Piaseczno i Warszawa"){
+      document.title="Torty Piaseczno i Warszawa"
+    }
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute("content", "test");
+    }
+  },[])
 
   return (
     <>
@@ -26,7 +35,7 @@ const Cakes = () => {
           <Category to={"/torty/" + kategoria}>{kategoria}</Category>
         ))}
       </CategoriesContainer>
-      <TitleWithLines title={title} />
+      <TitleWithLines title={title} header={1}/>
       <CakesContainer>
         {torty.map((tort) => (
           <Tile
@@ -37,8 +46,8 @@ const Cakes = () => {
             title={tort.tytuł}
             paragraph={tort.opis}
             category={title}
-            id={tort.id}
-            key={tort.id}
+            key={tort.tytuł}
+            id={tort.tytuł}
           />
         ))}
       </CakesContainer>
