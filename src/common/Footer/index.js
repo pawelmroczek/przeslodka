@@ -12,7 +12,6 @@ import {
 } from "./styled";
 import Logo from "../Logo";
 import { BAZA } from "../../BAZA";
-import { Component } from "react";
 import { scrollToTop } from "../scrollToTop";
 
 

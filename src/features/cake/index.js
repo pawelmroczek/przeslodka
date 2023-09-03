@@ -27,7 +27,7 @@ const Cake = () => {
     if (metaDescription) {
       metaDescription.setAttribute("content", cake.metaDESC);
     }
-  }, []);
+  }, [cake.metaDESC, cake.metaTITLE]);
 
   return (
     <Container>

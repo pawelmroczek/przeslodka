@@ -8,9 +8,7 @@ import Homepage from "./features/homepage";
 import Menu from "./features/menu";
 import {
   BrowserRouter,
-  HashRouter,
   Route,
-  Router,
   Switch,
 } from "react-router-dom/cjs/react-router-dom.min";
 import Cakes from "./features/cakes";

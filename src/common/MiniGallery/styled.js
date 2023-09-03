@@ -1,5 +1,4 @@
 import { styled } from "styled-components";
-import test from "../../images/test.jpeg"
 import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
 
 export const StyledParagraph = styled.p`

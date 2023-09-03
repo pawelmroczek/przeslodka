@@ -1,4 +1,3 @@
-
 import { Container, StyledImage, StyledTitle } from "./styled";
 
 

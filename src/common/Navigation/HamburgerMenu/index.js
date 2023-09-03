@@ -1,9 +1,6 @@
 import { useState } from "react";
 import { StyledIteam, StyledUl, Wrapper } from "./styled";
 import { StyledLink, StyledNavLink } from "../styled";
-import { FacebookIcon } from "../../Icons/FacebookIcon";
-import { InstagramIcon } from "../../Icons/InstagramIcon";
-import { TiktokIcon } from "../../Icons/TiktokIcon";
 import hamburgerIcon from "../../../images/hamburger-icon.png";
 
 const HamburgerMenu = ({ ikony, linki }) => {
