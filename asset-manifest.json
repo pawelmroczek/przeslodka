@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/przeslodka/static/css/main.23e16c3e.css",
-    "main.js": "/przeslodka/static/js/main.d63baa2d.js",
+    "main.js": "/przeslodka/static/js/main.71c03c6b.js",
     "static/js/787.8e3d950d.chunk.js": "/przeslodka/static/js/787.8e3d950d.chunk.js",
     "static/media/menu2.png": "/przeslodka/static/media/menu2.2691b718a11b6dca478b.png",
     "static/media/menu1.png": "/przeslodka/static/media/menu1.d6edfc168ece8088b2d8.png",
@@ -16,11 +16,11 @@
     "static/media/logo.jpeg": "/przeslodka/static/media/logo.7608bdb57e7ef5439b79.jpeg",
     "index.html": "/przeslodka/index.html",
     "main.23e16c3e.css.map": "/przeslodka/static/css/main.23e16c3e.css.map",
-    "main.d63baa2d.js.map": "/przeslodka/static/js/main.d63baa2d.js.map",
+    "main.71c03c6b.js.map": "/przeslodka/static/js/main.71c03c6b.js.map",
     "787.8e3d950d.chunk.js.map": "/przeslodka/static/js/787.8e3d950d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.23e16c3e.css",
-    "static/js/main.d63baa2d.js"
+    "static/js/main.71c03c6b.js"
   ]
 }
