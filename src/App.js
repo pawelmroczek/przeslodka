@@ -12,10 +12,13 @@ import {
   Switch,
 } from "react-router-dom/cjs/react-router-dom.min";
 import Cakes from "./features/cakes";
-import Cake from "./features/cake";
+import Cake from "./features/cakes/cake";
+import SweetTable from "./features/sweetTable";
+import Pops from "./features/sweetTable/cake";
 
 function App() {
   const toCake = ({ id,category } = { id: ":id", category: ":category" }) => `/torty/${category}/${id}`;
+  const toSweetTable = ({ id } = { id: ":id"}) => `/slodki-stol/${id}`;
 
   return (
     <ThemeProvider theme={theme}>
@@ -31,8 +34,14 @@ function App() {
           <Route path={toCake()}>
             <Cake/>
           </Route>
+          <Route path={toSweetTable()}>
+            <Pops/>
+          </Route>
           <Route path="/torty">
             <Cakes />
+          </Route>
+          <Route path="/slodki-stol">
+            <SweetTable/>
           </Route>
           <Route path="/">
             <Homepage />
