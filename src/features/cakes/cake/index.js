@@ -10,7 +10,7 @@ import {
   StyledSubtitle,
   StyledTitle,
 } from "./styled";
-import { BAZA } from "../../BAZA";
+import { BAZA } from "../../../BAZA";
 import { useEffect } from "react";
 
 const Cake = () => {
