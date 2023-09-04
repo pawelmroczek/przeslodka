@@ -24,19 +24,19 @@ const LastCakes = () => {
       <GalleryContainer>
         <StyledImg
           src={
-            "https://pawelmroczek.github.io/przeslodka/images/torty/" +
+            "/przeslodka/images/torty/" +
             BAZA.torty[counter].plik
           }
         />
         <StyledImg
           src={
-            "https://pawelmroczek.github.io/przeslodka/images/torty/" +
+            "/przeslodka/images/torty/" +
             BAZA.torty[counter - 1].plik
           }
         />
         <StyledImg
           src={
-            "https://pawelmroczek.github.io/przeslodka/images/torty/" +
+            "/przeslodka/images/torty/" +
             BAZA.torty[counter - 2].plik
           }
         />
@@ -49,7 +49,7 @@ const LastCakes = () => {
           </StyledButton>
           <StyledImg
           src={
-            "https://pawelmroczek.github.io/przeslodka/images/torty/" +
+            "/przeslodka/images/torty/" +
             BAZA.torty[counter - 1].plik
           }
         />
