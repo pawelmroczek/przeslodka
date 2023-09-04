@@ -148,6 +148,24 @@ export const BAZA = {
       id: "8",
     },
   ],
+  slodkiStol: [
+    {
+      plik: "IMG_8702.jpg",
+      tytuł: "fsd z kwiatami5",
+      metaTITLE: "Tort z kwiatami - Przesłodka.pl",
+      metaDESC:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultricies efficitur mi quis dignissim. Maecenas molestie eu quam ",
+      opis: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultricies efficitur mi quis dignissim. Maecenas molestie eu quam a rutrum. Ut feugiat neque quis auctor rutrum.",
+      podtytuł1: "Lorem",
+      dodatkowyOpis1:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultricies efficitur mi quis dignissim. Maecenas molestie eu quam a rut",
+      podtytuł2: "Ipsum",
+      dodatkowyOpis2:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultricies efficitur mi quis dignissim. Maecenas molestie eu quam a rut",
+      kategorie: ["torty na roczek"],
+      id: "5",
+    },
+  ],
   strona: {
     nawigacja: {
       logo: <Logo />,
