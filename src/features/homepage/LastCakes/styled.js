@@ -33,18 +33,17 @@ export const ButtonContainer = styled.div`
   display: flex;
   width: 100%;
   justify-content: space-between;
+  align-items:center;
   position:absolute;
 `;
 
 export const GalleryContainer = styled.div`
-  padding-top: 2%;
-  padding-bottom: 2%;
+  padding-top: 20px;
+  padding-bottom: 20px;
   display: flex;
   flex-wrap: wrap;
 `;
 
 export const StyledImg = styled.img`
   width: 33.33%;
-  padding-top: ${({ paddingTop }) => paddingTop}%;
-  padding-bottom: ${({ paddingBottom }) => paddingBottom}%;
 `;
