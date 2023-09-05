@@ -1,8 +1,9 @@
 import { useEffect } from "react"
-import { BAZA } from "../../BAZA"
 import TitleWithLines from "../../common/TitleWithLines"
 import Tile from "./Tile"
 import { CakesContainer, Container } from "./styled"
+import { useSelector } from "react-redux"
+import { selectSweetTable } from "../../cakeSlice"
 
 const SweetTable = ()=>{
   useEffect(()=>{
@@ -15,7 +16,7 @@ const SweetTable = ()=>{
     }
   },[])
 
-  const slodkosci=BAZA.slodkiStol;
+  const slodkosci=useSelector(selectSweetTable)
 
   return (
     <Container>

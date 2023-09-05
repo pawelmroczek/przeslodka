@@ -9,29 +9,36 @@ import {
   Category,
 } from "./styled";
 import { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { getCakesByCategory, selectCakes, selectCategories } from "../../cakeSlice";
 
 const Cakes = () => {
   const location = useLocation();
   const category = location.pathname;
   const czesci = category.split('/');
   const title = czesci[2] ? czesci[2] : "torty"
-  const torty = title === "torty" ? BAZA.torty.slice(0,20) : BAZA.torty.filter(tort => tort.kategorie.includes(title));
-  
-  useEffect(()=>{
-    if(document.title!=="Torty Piaseczno i Warszawa"){
-      document.title="Torty Piaseczno i Warszawa"
+  const allCakes = useSelector(selectCakes);
+  const filtered = useSelector(state=>getCakesByCategory(state,title))
+  const torty = title === "torty" ? allCakes.slice(0,20) : filtered;
+
+  useEffect(() => {
+    if (document.title !== "Torty Piaseczno i Warszawa") {
+      document.title = "Torty Piaseczno i Warszawa";
     }
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
       metaDescription.setAttribute("content", "test");
     }
-  },[])
+  }, []);
+
+
+  const categories= useSelector(selectCategories)
 
   return (
     <>
       <CategoriesContainer>
         <AllCakes to={"/torty"} >ostatnie torty</AllCakes>
-        {BAZA.kategorie.map((kategoria) => (
+        {categories.map((kategoria) => (
           <Category to={"/torty/" + kategoria}>{kategoria}</Category>
         ))}
       </CategoriesContainer>

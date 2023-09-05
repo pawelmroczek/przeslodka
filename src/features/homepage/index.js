@@ -6,8 +6,11 @@ import Section from "../../common/Section";
 import VerticalSection from "../../common/VerticalSection";
 import HeaderText from "./HeaderText";
 import LastCakes from "./LastCakes";
+import { useDispatch } from "react-redux";
+import { fetchCakes } from "../../cakeSlice";
 
 const Homepage = () => {
+
   useEffect(() => {
     if (document.title !== "Torty Piaseczno i Warszawa") {
       document.title = "Torty Piaseczno i Warszawa";
@@ -33,18 +36,19 @@ const Homepage = () => {
           </>
         }
       />
-      <VerticalSection
-        title={"Składniki"}
-        text={
-          "W naszych tortach nie używamy gotowych mieszanek, ulepszaczy, jajek w proszku, margaryny i utwardzonych tłuszczów roślinnych. Tylko naturalne składniki! Dla alergików na życzenie wykluczamy alergeny i produkty mogące wywoływać nietolerancje pokarmowe. Dajemy Państwu możliwość wybrania własnych kompozycji smaków i zdobień. Każdy tort jest dzięki temu unikalny."
-        }
-      />
       <MiniGallery
         title={"Oferta"}
         text={
           "Zawsze stawiamy na pierwszym miejscu zadowolenie Klienta, a więc dostosowujemy ofertę do Jego potrzeb. Terminy na torty artystyczne to tydzień lub kilka dni w zależności od trudności wykonania. Przy krótkich terminach od zamówienia na torty do realizacji, prosimy o kontakt telefoniczny w celu usprawnienia działania."
         }
       />
+      <VerticalSection
+        title={"Składniki"}
+        text={
+          "W naszych tortach nie używamy gotowych mieszanek, ulepszaczy, jajek w proszku, margaryny i utwardzonych tłuszczów roślinnych. Tylko naturalne składniki! Dla alergików na życzenie wykluczamy alergeny i produkty mogące wywoływać nietolerancje pokarmowe. Dajemy Państwu możliwość wybrania własnych kompozycji smaków i zdobień. Każdy tort jest dzięki temu unikalny."
+        }
+      />
+      
       <LastCakes />
     </>
   );

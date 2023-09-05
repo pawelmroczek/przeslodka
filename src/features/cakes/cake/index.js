@@ -10,13 +10,14 @@ import {
   StyledSubtitle,
   StyledTitle,
 } from "./styled";
-import { BAZA } from "../../../BAZA";
 import { useEffect } from "react";
+import { useSelector } from "react-redux";
+import { getCakeById } from "../../../cakeSlice";
 
 const Cake = () => {
   const { id } = useParams();
   const location = useLocation();
-  const cake = BAZA.torty.find((tort) => tort.tytuł === id);
+  const cake = useSelector((state) => getCakeById(state, id));
   const czesci = location.pathname.split("/");
   const back =
     czesci[2] === "torty" ? "/torty" : "/" + czesci[1] + "/" + czesci[2];

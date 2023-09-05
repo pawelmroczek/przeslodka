@@ -10,12 +10,13 @@ import {
   StyledSubtitle,
   StyledTitle,
 } from "./styled";
-import { BAZA } from "../../../BAZA";
 import { useEffect } from "react";
+import { useSelector } from "react-redux";
+import { getSweetById } from "../../../cakeSlice";
 
 const Pops = () => {
   const { id } = useParams();
-  const cake = BAZA.slodkiStol.find((tort) => tort.tytuł === id);
+  const cake = useSelector(state=>getSweetById(state,id))
   
   useEffect(() => {
     document.title = cake.metaTITLE;
