@@ -12,6 +12,12 @@ export const Container = styled.div`
   @media (max-width: ${({ theme }) => theme.breakpoints.phoneMedia}px) {
     width: 80%;
   }
+
+  transition: transform 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.02);
+  }
 `;
 
 export const StyledImage = styled.img`
