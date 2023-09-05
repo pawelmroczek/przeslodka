@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom/cjs/react-router-dom";
 import { css, styled } from "styled-components";
 
 export const StyledTitle = styled.h2`
@@ -42,10 +43,16 @@ export const GalleryContainer = styled.div`
   padding-top: 20px;
   padding-bottom: 20px;
   display: flex;
+  justify-content:center;
+  align-items:center;
   flex-wrap: wrap;
 `;
 
 export const StyledImg = styled.img`
   z-index: -1;
-  width: 33.33%;
+  width: 100%;
 `;
+
+export const StyledNavLink = styled(NavLink)`
+  width: 33.33%;
+`

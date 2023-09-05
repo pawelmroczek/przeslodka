@@ -1,9 +1,10 @@
 import { useSelector } from "react-redux";
 import TitleWithLines from "../../../common/TitleWithLines";
-import { ButtonContainer, StyledButton } from "./styled";
+import { ButtonContainer, StyledButton, StyledNavLink } from "./styled";
 import { GalleryContainer, StyledImg } from "./styled";
 import { useEffect, useState } from "react";
 import { selectCakes } from "../../cakeSlice";
+import { scrollToTop } from "../../../common/scrollToTop";
 const LastCakes = () => {
   const torty = useSelector(selectCakes);
   const [counter, setCounter] = useState(torty.length - 1);
@@ -23,7 +24,7 @@ const LastCakes = () => {
       setCounter((counter) => counter - 1);
     }
   };
-  
+
   if (torty.length) {
     return (
       <>
@@ -36,13 +37,24 @@ const LastCakes = () => {
           >
             &lt;
           </StyledButton>
-          <StyledImg src={"/przeslodka/images/torty/" + torty[counter].plik} />
-          <StyledImg
-            src={"/przeslodka/images/torty/" + torty[counter - 1].plik}
-          />
-          <StyledImg
-            src={"/przeslodka/images/torty/" + torty[counter - 2].plik}
-          />
+          <StyledNavLink to={"/torty/torty/" + torty[counter].tytuł}>
+            <StyledImg
+              onClick={scrollToTop}
+              src={"/przeslodka/images/torty/" + torty[counter].plik}
+            />
+          </StyledNavLink>
+          <StyledNavLink to={"/torty/torty/" + torty[counter - 1].tytuł}>
+            <StyledImg
+              onClick={scrollToTop}
+              src={"/przeslodka/images/torty/" + torty[counter - 1].plik}
+            />
+          </StyledNavLink>
+          <StyledNavLink to={"/torty/torty/" + torty[counter - 2].tytuł}>
+            <StyledImg
+              onClick={scrollToTop}
+              src={"/przeslodka/images/torty/" + torty[counter - 2].plik}
+            />
+          </StyledNavLink>
           <StyledButton disabled={counter <= 2} onClick={decreasae}>
             &gt;
           </StyledButton>
