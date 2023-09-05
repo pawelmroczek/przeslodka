@@ -11,6 +11,7 @@ export const StyledSection = styled.section`
   background-position:center;
   background-size:cover;
   color:white;
+  margin-bottom:20px;
 `;
 
 export const StyledParagraph= styled.p`
