@@ -1,6 +1,5 @@
 import { Container, StyledImage, StyledTitle } from "./styled";
 
-
 const Tile = ({ title, image }) => (
   <Container>
     <StyledImage src={image} alt={title} />

@@ -6,18 +6,18 @@ import Section from "../../common/Section";
 import VerticalSection from "../../common/VerticalSection";
 import HeaderText from "./HeaderText";
 import LastCakes from "./LastCakes";
-import { useDispatch } from "react-redux";
-import { fetchCakes } from "../cakeSlice";
 
 const Homepage = () => {
-
   useEffect(() => {
     if (document.title !== "Torty Piaseczno i Warszawa") {
       document.title = "Torty Piaseczno i Warszawa";
     }
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute("content", "test");
+      metaDescription.setAttribute(
+        "content",
+        "Torty urodzinowe, komunijne, weselne z dowozem 602 351 865. Z motywem Wednesday i inne"
+      );
     }
   }, []);
 
@@ -48,7 +48,7 @@ const Homepage = () => {
           "W naszych tortach nie używamy gotowych mieszanek, ulepszaczy, jajek w proszku, margaryny i utwardzonych tłuszczów roślinnych. Tylko naturalne składniki! Dla alergików na życzenie wykluczamy alergeny i produkty mogące wywoływać nietolerancje pokarmowe. Dajemy Państwu możliwość wybrania własnych kompozycji smaków i zdobień. Każdy tort jest dzięki temu unikalny."
         }
       />
-      
+
       <LastCakes />
     </>
   );

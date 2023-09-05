@@ -1,8 +1,4 @@
-import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
 import { styled } from "styled-components";
-
-
-
 
 export const CakesContainer = styled.div`
   padding: 20px;
@@ -13,5 +9,5 @@ export const CakesContainer = styled.div`
 `;
 
 export const Container = styled.div`
-  padding-top:20px;
-`
+  padding-top: 20px;
+`;

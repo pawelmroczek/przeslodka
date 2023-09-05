@@ -17,7 +17,7 @@ const Navigation = ({ ikony, linki }) => {
 
   useEffect(() => {
     dispatch(fetchCakes());
-  }, []);
+  }, [dispatch]);
 
   return (
     <Wrapper>
@@ -32,8 +32,10 @@ const Navigation = ({ ikony, linki }) => {
             <StyledLink href="#kontakt">kontakt</StyledLink>
           </li>
         </StyledUl>
+
         <NavLink to="/"> {BAZA.strona.nawigacja.logo}</NavLink>
         <HamburgerMenu ikony={ikony} linki={linki} />
+
         <StyledUl>
           {linki.map((link) => (
             <li key={link.href}>

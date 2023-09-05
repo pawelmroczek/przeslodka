@@ -5,7 +5,7 @@ import babeczki from "../../images/babeczki1.jpg";
 
 import Tile from "./Tile";
 import TitleWithLines from "../TitleWithLines";
-const MiniGallery = ({ title, text, content }) => (
+const MiniGallery = ({ title, text }) => (
   <StyledSection>
     <TitleWithLines title={title} />
     <StyledParagraph>{text}</StyledParagraph>

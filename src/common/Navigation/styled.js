@@ -88,4 +88,8 @@ export const StyledLink = styled.a`
 export const StyledNavLink = styled(NavLink)`
   text-decoration: none;
   color: white;
+
+  &:hover {
+    border-bottom: 1px white solid;
+  }
 `;

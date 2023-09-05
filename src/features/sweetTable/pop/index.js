@@ -1,7 +1,4 @@
-import {
-  useLocation,
-  useParams,
-} from "react-router-dom/cjs/react-router-dom.min";
+import { useParams } from "react-router-dom/cjs/react-router-dom.min";
 import {
   Container,
   StyledImg,
@@ -16,30 +13,30 @@ import { getSweetById } from "../../cakeSlice";
 
 const Pops = () => {
   const { id } = useParams();
-  const cake = useSelector(state=>getSweetById(state,id))
-  
+  const pop = useSelector((state) => getSweetById(state, id));
+
   useEffect(() => {
-    document.title = cake.metaTITLE;
+    document.title = pop.metaTITLE;
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute("content", cake.metaDESC);
+      metaDescription.setAttribute("content", pop.metaDESC);
     }
-  }, [cake.metaDESC, cake.metaTITLE]);
+  }, [pop.metaDESC, pop.metaTITLE]);
 
   return (
     <Container>
       <StyledImg
         src={
-          "https://pawelmroczek.github.io/przeslodka/images/torty/" + cake.plik
+          "https://pawelmroczek.github.io/przeslodka/images/torty/" + pop.plik
         }
       />
       <div>
-        <StyledTitle>{cake.tytuł}</StyledTitle>
-        <StyledParagraph>{cake.opis}</StyledParagraph>
-        <StyledSubtitle>{cake.podtytuł1}</StyledSubtitle>
-        <StyledParagraph>{cake.dodatkowyOpis1}</StyledParagraph>
-        <StyledSubtitle>{cake.podtytuł2}</StyledSubtitle>
-        <StyledParagraph>{cake.dodatkowyOpis2}</StyledParagraph>
+        <StyledTitle>{pop.tytuł}</StyledTitle>
+        <StyledParagraph>{pop.opis}</StyledParagraph>
+        <StyledSubtitle>{pop.podtytuł1}</StyledSubtitle>
+        <StyledParagraph>{pop.dodatkowyOpis1}</StyledParagraph>
+        <StyledSubtitle>{pop.podtytuł2}</StyledSubtitle>
+        <StyledParagraph>{pop.dodatkowyOpis2}</StyledParagraph>
       </div>
       <StyledNavLink to={"/slodki-stol"}>Wróć do słodkości</StyledNavLink>
     </Container>

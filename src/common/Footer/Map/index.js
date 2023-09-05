@@ -11,4 +11,4 @@ const Map = () => (
   ></StyledMap>
 );
 
-export default Map
+export default Map;

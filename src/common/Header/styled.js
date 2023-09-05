@@ -5,25 +5,23 @@ export const FirstImg = styled.div`
   background-image: url(${backgroundimg});
   background-size: cover;
   background-position: center;
- 
 `;
 
 export const StyledHeader = styled.header`
-background-color:rgba(0, 0, 0, 0.3);
-padding: 80px;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.phoneMedia}px) {
-   padding:30px;
+    padding: 30px;
   }
 `;
 
 export const StyledText = styled.h1`
   color: white;
-  margin:0;
-  //font-family: "Zeyada", cursive;
+  margin: 0;
   font-size: 50px;
   font-weight: 800;
   text-transform: uppercase;
@@ -33,5 +31,3 @@ export const StyledText = styled.h1`
     font-size: 30px;
   }
 `;
-
-

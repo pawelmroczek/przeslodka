@@ -26,13 +26,14 @@
 
 html {
   box-sizing: border-box;
-  background-color:#FBFBFE;
+  background-color: #fbfbfe;
 }
 
-*, ::after, ::before {
+*,
+::after,
+::before {
   box-sizing: inherit;
 }
-
 
 .App-link {
   color: #61dafb;

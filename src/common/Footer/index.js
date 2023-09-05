@@ -4,7 +4,6 @@ import {
   LinksContainer,
   Name,
   Phone,
-  StyledFooter,
   StyledImg,
   StyledNavLink,
   StyledUl,
@@ -15,13 +14,13 @@ import { scrollToTop } from "../scrollToTop";
 import { useSelector } from "react-redux";
 import { selectCategories } from "../../features/cakeSlice";
 import Map from "./Map";
-import dojazd from "../../images/dojazd.jpg"
+import dojazd from "../../images/dojazd.jpg";
 
 const Footer = () => {
   const categories = useSelector(selectCategories);
 
   return (
-    <StyledFooter id="kontakt">
+    <footer id="kontakt">
       <Wrapper>
         <Container>
           <Logo />
@@ -31,7 +30,7 @@ const Footer = () => {
           <Email href="mailto:iza@przeslodka.pl">iza@przeslodka.pl</Email>
           <Map />
           <Name>Wskazówki dojazdu:</Name>
-          <StyledImg src={dojazd}/>
+          <StyledImg src={dojazd} />
         </Container>
         <LinksContainer>
           <StyledUl>
@@ -45,7 +44,7 @@ const Footer = () => {
           </StyledUl>
         </LinksContainer>
       </Wrapper>
-    </StyledFooter>
+    </footer>
   );
 };
 

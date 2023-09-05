@@ -1,11 +1,6 @@
 import { takeLatest, call, put, delay } from "redux-saga/effects";
 
-import {
-  fetchCakes,
-  setCakes,
-  setCategories,
-  setSweets,
-} from "./cakeSlice";
+import { fetchCakes, setCakes, setCategories, setSweets } from "./cakeSlice";
 
 import { getCakes } from "./getCakes";
 

@@ -12,10 +12,6 @@ export const Wrapper = styled.div`
   }
 `;
 
-export const StyledFooter = styled.footer`
-  //margin-top: 20px;
-`;
-
 export const LinksContainer = styled.div`
   background-image: url(${cake});
   background-position: center;
@@ -25,6 +21,7 @@ export const LinksContainer = styled.div`
   align-items: center;
   width: 50%;
   font-size: 25px;
+
   @media (max-width: ${({ theme }) => theme.breakpoints.phoneMedia}px) {
     width: 100%;
     font-size: 17px;
@@ -34,10 +31,6 @@ export const LinksContainer = styled.div`
 export const StyledUl = styled.ul`
   background-color: rgb(0, 0, 0, 0.5);
   padding: 30px;
-  //text-align:center;
-  //display:grid;
-  //grid-template-columns:1fr 1fr ;
-  
 `;
 
 export const StyledLogo = styled.img`
@@ -63,7 +56,6 @@ export const Email = styled.a`
   color: white;
 `;
 
-
 export const Phone = styled.a`
   font-size: 30px;
   font-weight: 700;
@@ -80,9 +72,9 @@ export const Name = styled.h2`
 `;
 
 export const StyledNavLink = styled(NavLink)`
-  text-decoration:none;
-  color:white;
-`
+  text-decoration: none;
+  color: white;
+`;
 export const StyledImg = styled.img`
-  width:80%;
-`
+  width: 80%;
+`;

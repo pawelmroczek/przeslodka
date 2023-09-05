@@ -1,6 +1,6 @@
 import { useSelector } from "react-redux";
 import TitleWithLines from "../../../common/TitleWithLines";
-import { ButtonContainer, StyledButton, StyledNavLink } from "./styled";
+import { StyledButton, StyledNavLink } from "./styled";
 import { GalleryContainer, StyledImg } from "./styled";
 import { useEffect, useState } from "react";
 import { selectCakes } from "../../cakeSlice";

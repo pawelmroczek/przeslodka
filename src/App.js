@@ -17,8 +17,9 @@ import SweetTable from "./features/sweetTable";
 import Pops from "./features/sweetTable/pop";
 
 function App() {
-  const toCake = ({ id,category } = { id: ":id", category: ":category" }) => `/torty/${category}/${id}`;
-  const toSweetTable = ({ id } = { id: ":id"}) => `/slodki-stol/${id}`;
+  const toCake = ({ id, category } = { id: ":id", category: ":category" }) =>
+    `/torty/${category}/${id}`;
+  const toSweetTable = ({ id } = { id: ":id" }) => `/slodki-stol/${id}`;
 
   return (
     <ThemeProvider theme={theme}>
@@ -32,16 +33,16 @@ function App() {
             <Menu />
           </Route>
           <Route path={toCake()}>
-            <Cake/>
+            <Cake />
           </Route>
           <Route path={toSweetTable()}>
-            <Pops/>
+            <Pops />
           </Route>
           <Route path="/torty">
             <Cakes />
           </Route>
           <Route path="/slodki-stol">
-            <SweetTable/>
+            <SweetTable />
           </Route>
           <Route path="/">
             <Homepage />

@@ -11,7 +11,7 @@ const Menu = () => {
     }
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute("content","test");
+      metaDescription.setAttribute("content","Torty urodzinowe, komunijne, weselne z dowozem 602 351 865. Z motywem Wednesday i inne");
     }
   },[])
 

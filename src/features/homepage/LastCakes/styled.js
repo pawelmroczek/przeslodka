@@ -43,8 +43,8 @@ export const GalleryContainer = styled.div`
   padding-top: 20px;
   padding-bottom: 20px;
   display: flex;
-  justify-content:center;
-  align-items:center;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
 `;
 
@@ -55,4 +55,4 @@ export const StyledImg = styled.img`
 
 export const StyledNavLink = styled(NavLink)`
   width: 33.33%;
-`
+`;
