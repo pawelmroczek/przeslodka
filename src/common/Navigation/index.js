@@ -8,7 +8,7 @@ import {
 import HamburgerMenu from "./HamburgerMenu";
 import { BAZA } from "../../BAZA";
 import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
-import { fetchCakes } from "../../cakeSlice";
+import { fetchCakes } from "../../features/cakeSlice";
 import { useDispatch } from "react-redux";
 import { useEffect } from "react";
 

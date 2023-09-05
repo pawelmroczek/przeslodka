@@ -3,7 +3,7 @@ import TitleWithLines from "../../../common/TitleWithLines";
 import { ButtonContainer, StyledButton } from "./styled";
 import { GalleryContainer, StyledImg } from "./styled";
 import { useEffect, useState } from "react";
-import { selectCakes } from "../../../cakeSlice";
+import { selectCakes } from "../../cakeSlice";
 const LastCakes = () => {
   const torty = useSelector(selectCakes);
   const [counter, setCounter] = useState(torty.length - 1);

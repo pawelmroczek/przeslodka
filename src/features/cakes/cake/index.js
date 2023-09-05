@@ -12,7 +12,7 @@ import {
 } from "./styled";
 import { useEffect } from "react";
 import { useSelector } from "react-redux";
-import { getCakeById } from "../../../cakeSlice";
+import { getCakeById } from "../../cakeSlice";
 
 const Cake = () => {
   const { id } = useParams();

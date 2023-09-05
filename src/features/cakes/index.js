@@ -13,7 +13,7 @@ import {
   getCakesByCategory,
   selectCakes,
   selectCategories,
-} from "../../cakeSlice";
+} from "../cakeSlice";
 
 const Cakes = () => {
   const location = useLocation();

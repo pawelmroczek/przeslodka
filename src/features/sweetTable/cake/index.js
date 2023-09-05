@@ -12,7 +12,7 @@ import {
 } from "./styled";
 import { useEffect } from "react";
 import { useSelector } from "react-redux";
-import { getSweetById } from "../../../cakeSlice";
+import { getSweetById } from "../../cakeSlice";
 
 const Pops = () => {
   const { id } = useParams();

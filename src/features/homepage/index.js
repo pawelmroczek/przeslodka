@@ -7,7 +7,7 @@ import VerticalSection from "../../common/VerticalSection";
 import HeaderText from "./HeaderText";
 import LastCakes from "./LastCakes";
 import { useDispatch } from "react-redux";
-import { fetchCakes } from "../../cakeSlice";
+import { fetchCakes } from "../cakeSlice";
 
 const Homepage = () => {
 

@@ -3,7 +3,7 @@ import TitleWithLines from "../../common/TitleWithLines"
 import Tile from "./Tile"
 import { CakesContainer, Container } from "./styled"
 import { useSelector } from "react-redux"
-import { selectSweetTable } from "../../cakeSlice"
+import { selectSweetTable } from "../cakeSlice"
 
 const SweetTable = ()=>{
   useEffect(()=>{

@@ -13,7 +13,7 @@ import {
 import Logo from "../Logo";
 import { scrollToTop } from "../scrollToTop";
 import { useSelector } from "react-redux";
-import { selectCategories } from "../../cakeSlice";
+import { selectCategories } from "../../features/cakeSlice";
 import Map from "./Map";
 import dojazd from "../../images/dojazd.jpg"
 
