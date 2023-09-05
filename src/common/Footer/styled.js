@@ -63,10 +63,6 @@ export const Email = styled.a`
   color: white;
 `;
 
-export const StyledMap = styled.iframe`
-  border: 0;
-  margin-top: 20px;
-`;
 
 export const Phone = styled.a`
   font-size: 30px;
@@ -86,4 +82,7 @@ export const Name = styled.h2`
 export const StyledNavLink = styled(NavLink)`
   text-decoration:none;
   color:white;
+`
+export const StyledImg = styled.img`
+  width:80%;
 `
