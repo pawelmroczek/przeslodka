@@ -1,4 +1,4 @@
-import { styled } from "styled-components";
+import { css, styled } from "styled-components";
 
 export const StyledTitle = styled.h2`
   color: black;
@@ -13,31 +13,32 @@ export const StyledTitle = styled.h2`
 
 export const StyledButton = styled.button`
   border: none;
-  background:none;
-  /* background: rgb(0,0,0,0.3); */
+  background: none;
   font-size: 70px;
   color: black;
   cursor: pointer;
-  //text-shadow: -7px -3px 10px rgba(255, 255, 255, 1);
-
+  position: absolute;
+  top: 40%;
+  right: 0;
+  z-index: 3;
   &:hover {
     color: black;
   }
+
+  ${({ left }) =>
+    left &&
+    css`
+      right: inherit;
+      left: 0;
+    `}
 
   &:disabled {
     color: lightgray;
   }
 `;
 
-export const ButtonContainer = styled.div`
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  align-items:center;
-  position:absolute;
-`;
-
 export const GalleryContainer = styled.div`
+  position: relative;
   padding-top: 20px;
   padding-bottom: 20px;
   display: flex;
@@ -45,5 +46,6 @@ export const GalleryContainer = styled.div`
 `;
 
 export const StyledImg = styled.img`
+  z-index: -1;
   width: 33.33%;
 `;

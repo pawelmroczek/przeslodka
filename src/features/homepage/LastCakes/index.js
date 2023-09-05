@@ -23,11 +23,19 @@ const LastCakes = () => {
       setCounter((counter) => counter - 1);
     }
   };
+  
   if (torty.length) {
     return (
       <>
         <TitleWithLines title={"ostatnie torty"} />
         <GalleryContainer>
+          <StyledButton
+            left
+            disabled={counter > torty.length - 2}
+            onClick={increase}
+          >
+            &lt;
+          </StyledButton>
           <StyledImg src={"/przeslodka/images/torty/" + torty[counter].plik} />
           <StyledImg
             src={"/przeslodka/images/torty/" + torty[counter - 1].plik}
@@ -35,20 +43,9 @@ const LastCakes = () => {
           <StyledImg
             src={"/przeslodka/images/torty/" + torty[counter - 2].plik}
           />
-          <ButtonContainer>
-            <StyledButton
-              disabled={counter > torty.length - 2}
-              onClick={increase}
-            >
-              &lt;
-            </StyledButton>
-            <StyledImg
-              src={"/przeslodka/images/torty/" + torty[counter - 1].plik}
-            />
-            <StyledButton disabled={counter <= 2} onClick={decreasae}>
-              &gt;
-            </StyledButton>
-          </ButtonContainer>
+          <StyledButton disabled={counter <= 2} onClick={decreasae}>
+            &gt;
+          </StyledButton>
         </GalleryContainer>
       </>
     );
