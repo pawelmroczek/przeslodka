@@ -1,5 +1,4 @@
 import { useLocation } from "react-router-dom/cjs/react-router-dom.min";
-import { BAZA } from "../../BAZA";
 import TitleWithLines from "../../common/TitleWithLines";
 import Tile from "./Tile";
 import {
@@ -9,17 +8,21 @@ import {
   Category,
 } from "./styled";
 import { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { getCakesByCategory, selectCakes, selectCategories } from "../../cakeSlice";
+import { useSelector } from "react-redux";
+import {
+  getCakesByCategory,
+  selectCakes,
+  selectCategories,
+} from "../../cakeSlice";
 
 const Cakes = () => {
   const location = useLocation();
   const category = location.pathname;
-  const czesci = category.split('/');
-  const title = czesci[2] ? czesci[2] : "torty"
+  const czesci = category.split("/");
+  const title = czesci[2] ? czesci[2] : "torty";
   const allCakes = useSelector(selectCakes);
-  const filtered = useSelector(state=>getCakesByCategory(state,title))
-  const torty = title === "torty" ? allCakes.slice(0,20) : filtered;
+  const filtered = useSelector((state) => getCakesByCategory(state, title));
+  const torty = title === "torty" ? allCakes.slice(0, 20) : filtered;
 
   useEffect(() => {
     if (document.title !== "Torty Piaseczno i Warszawa") {
@@ -31,18 +34,17 @@ const Cakes = () => {
     }
   }, []);
 
-
-  const categories= useSelector(selectCategories)
+  const categories = useSelector(selectCategories);
 
   return (
     <>
       <CategoriesContainer>
-        <AllCakes to={"/torty"} >ostatnie torty</AllCakes>
+        <AllCakes to={"/torty"}>ostatnie torty</AllCakes>
         {categories.map((kategoria) => (
           <Category to={"/torty/" + kategoria}>{kategoria}</Category>
         ))}
       </CategoriesContainer>
-      <TitleWithLines title={title} header={1}/>
+      <TitleWithLines title={title} header={1} />
       <CakesContainer>
         {torty.map((tort) => (
           <Tile

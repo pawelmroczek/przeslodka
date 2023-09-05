@@ -1,4 +1,10 @@
-import { StyledLink, StyledNav, StyledNavLink, StyledUl, Wrapper } from "./styled";
+import {
+  StyledLink,
+  StyledNav,
+  StyledNavLink,
+  StyledUl,
+  Wrapper,
+} from "./styled";
 import HamburgerMenu from "./HamburgerMenu";
 import { BAZA } from "../../BAZA";
 import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
@@ -6,12 +12,11 @@ import { fetchCakes } from "../../cakeSlice";
 import { useDispatch } from "react-redux";
 import { useEffect } from "react";
 
-
 const Navigation = ({ ikony, linki }) => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(fetchCakes())
+    dispatch(fetchCakes());
   }, []);
 
   return (
@@ -28,8 +33,7 @@ const Navigation = ({ ikony, linki }) => {
           </li>
         </StyledUl>
         <NavLink to="/"> {BAZA.strona.nawigacja.logo}</NavLink>
-            
-        <HamburgerMenu ikony={ikony} linki={linki}/>
+        <HamburgerMenu ikony={ikony} linki={linki} />
         <StyledUl>
           {linki.map((link) => (
             <li key={link.href}>
@@ -40,6 +44,6 @@ const Navigation = ({ ikony, linki }) => {
       </StyledNav>
     </Wrapper>
   );
-}
+};
 
 export default Navigation;
