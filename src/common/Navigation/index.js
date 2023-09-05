@@ -8,7 +8,7 @@ const Navigation = ({ ikony, linki }) => (
     <StyledNav>
       <StyledUl icons>
         {ikony.map((ikona) => (
-          <li>
+          <li key={ikona.href}>
             <a href={ikona.href}>{ikona.content}</a>
           </li>
         ))}
@@ -21,8 +21,8 @@ const Navigation = ({ ikony, linki }) => (
       <HamburgerMenu ikony={ikony} linki={linki}/>
       <StyledUl>
         {linki.map((link) => (
-          <li>
-            <StyledLink><StyledNavLink to={link.href}>{link.content}</StyledNavLink></StyledLink>
+          <li key={link.href}>
+            <StyledNavLink to={link.href}>{link.content}</StyledNavLink>
           </li>
         ))}
       </StyledUl>

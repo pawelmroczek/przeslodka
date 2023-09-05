@@ -19,26 +19,24 @@ const HamburgerMenu = ({ ikony, linki }) => {
       />
       <StyledUl hidden={hidden}>
         {linki.map((link) => (
-          <li>
-            <StyledIteam>
-              {" "}
-              <StyledLink
-                onClick={() => {
-                  setHidden((hidden) => (hidden = !hidden));
-                }}
-              >
-                <StyledNavLink to={link.href}>{link.content}</StyledNavLink>
-              </StyledLink>
-            </StyledIteam>
-          </li>
+          <StyledIteam
+            key={link.href}
+            onClick={() => {
+              setHidden((hidden) => (hidden = !hidden));
+            }}
+          >
+            <StyledNavLink to={link.href}>{link.content}</StyledNavLink>
+          </StyledIteam>
         ))}
-        <StyledIteam  onClick={() => {
-          setHidden((hidden) => (hidden = !hidden));
-        }}>
+        <StyledIteam
+          onClick={() => {
+            setHidden((hidden) => (hidden = !hidden));
+          }}
+        >
           <StyledLink href="#kontakt">kontakt</StyledLink>
         </StyledIteam>
         {ikony.map((ikona) => (
-          <StyledIteam icon>
+          <StyledIteam icon key={ikona.href}>
             <a href={ikona.href}>{ikona.content}</a>
           </StyledIteam>
         ))}
