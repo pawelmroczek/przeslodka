@@ -34,9 +34,9 @@ const Footer = () => {
           <StyledImg src={dojazd} />
         </Container>
         <LinksContainer>
-          <StyledUl>
+          <StyledUl onClick={scrollToTop}>
             {categories.map((kategoria) => (
-              <StyledListItem onClick={scrollToTop} key={kategoria}>
+              <StyledListItem  key={kategoria}>
                 <StyledNavLink to={"/torty/" + kategoria}>
                   {kategoria}
                 </StyledNavLink>
