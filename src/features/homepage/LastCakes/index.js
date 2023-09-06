@@ -39,17 +39,17 @@ const LastCakes = () => {
           </StyledButton>
           <StyledNavLink to={"/torty/torty/" + torty[counter].tytuł}>
             <StyledImg
-              src={"/przeslodka/images/torty/" + torty[counter].plik}
+              src={"https://www.new.przeslodka.pl/images/torty/" + torty[counter].plik}
             />
           </StyledNavLink>
           <StyledNavLink to={"/torty/torty/" + torty[counter - 1].tytuł}>
             <StyledImg
-              src={"/przeslodka/images/torty/" + torty[counter - 1].plik}
+              src={"https://www.new.przeslodka.pl/images/torty/" + torty[counter - 1].plik}
             />
           </StyledNavLink>
           <StyledNavLink to={"/torty/torty/" + torty[counter - 2].tytuł}>
             <StyledImg
-              src={"/przeslodka/images/torty/" + torty[counter - 2].plik}
+              src={"https://www.new.przeslodka.pl/images/torty/" + torty[counter - 2].plik}
             />
           </StyledNavLink>
           <StyledButton disabled={counter <= 2} onClick={decreasae}>

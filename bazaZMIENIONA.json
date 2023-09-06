@@ -1,0 +1,58 @@
+{
+  "kategorie": [
+    "torty urodzinowe",      
+    "torty dziecięce",
+    "torty dla chłopca",
+    "torty dla dziewczynki",
+    "torty na roczek",
+    "torty na baby shower",   
+    "torty weselne",
+    "torty piętrowe",
+    "torty na chrzciny",
+    "torty na komunię",
+    "torty kobiece",
+    "torty męskie",
+    "torty na rocznicę",
+    "torty na imprezy firmowe",
+    "torty z kwiatami",
+    "torty z figurkami"
+  ],
+  "torty": [
+    {
+      "plik": "elza.jpg",
+      "tytuł": "Tort z Elza",
+      "metaTITLE": "Tort z Elza - Przesłodka.pl",
+      "metaDESC": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultricies efficitur mi quis dignissim. Maecenas molestie eu quam ",
+      "opis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultricies efficitur mi quis dignissim. Maecenas molestie eu quam a rutrum. Ut feugiat neque quis auctor rutrum.",
+      "podtytuł1": "Lorem",
+      "dodatkowyOpis1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultricies efficitur mi quis dignissim. Maecenas molestie eu quam a rut",
+      "podtytuł2": "Ipsum",
+      "dodatkowyOpis2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultricies efficitur mi quis dignissim. Maecenas molestie eu quam a rut",
+      "kategorie": ["torty dziecięce", "torty urodzinowe"]
+    },
+    {
+      "plik": "koty.jpg",
+      "tytuł": "Tort z kotami",
+      "metaTITLE": "Tort z kwiatami - Przesłodka.pl",
+      "metaDESC": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultricies efficitur mi quis dignissim. Maecenas molestie eu quam ",
+      "opis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultricies efficitur mi quis dignissim. Maecenas molestie eu quam a rutrum. Ut feugiat neque quis auctor rutrum.",
+      "podtytuł1": "Lorem",
+      "dodatkowyOpis1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultricies efficitur mi quis dignissim. Maecenas molestie eu quam a rut",
+      "podtytuł2": "Ipsum",
+      "dodatkowyOpis2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultricies efficitur mi quis dignissim. Maecenas molestie eu quam a rut",
+      "kategorie": ["torty na roczek"]
+    },
+    {
+      "plik": "tennis.jpg",
+      "tytuł": "Tort tennisowy",
+      "metaTITLE": "Tort z kwiatami - Przesłodka.pl",
+      "metaDESC": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultricies efficitur mi quis dignissim. Maecenas molestie eu quam ",
+      "opis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultricies efficitur mi quis dignissim. Maecenas molestie eu quam a rutrum. Ut feugiat neque quis auctor rutrum.",
+      "podtytuł1": "Lorem",
+      "dodatkowyOpis1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultricies efficitur mi quis dignissim. Maecenas molestie eu quam a rut",
+      "podtytuł2": "Ipsum",
+      "dodatkowyOpis2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultricies efficitur mi quis dignissim. Maecenas molestie eu quam a rut",
+      "kategorie": ["torty na imprezy firmowe"]
+    }
+  ]
+}

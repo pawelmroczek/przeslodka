@@ -27,7 +27,7 @@ const SweetTable = ()=>{
         {slodkosci.map((tort) => (
           <Tile
             image={
-              "https://pawelmroczek.github.io/przeslodka/images/torty/" +
+              "https://www.new.przeslodka.pl/images/torty/" +
               tort.plik
             }
             title={tort.tytuł}

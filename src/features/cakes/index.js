@@ -52,7 +52,7 @@ const Cakes = () => {
         {torty.map((tort) => (
           <Tile
             image={
-              "/przeslodka/images/torty/" +
+              "https://www.new.przeslodka.pl/images/torty/" +
               tort.plik
             }
             title={tort.tytuł}

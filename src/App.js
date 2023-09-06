@@ -6,15 +6,17 @@ import Footer from "./common/Footer";
 import { BAZA } from "./BAZA";
 import Homepage from "./features/homepage";
 import Menu from "./features/menu";
-import {
-  BrowserRouter,
-  Route,
-  Switch,
-} from "react-router-dom/cjs/react-router-dom.min";
+// import {
+//   BrowserRouter,
+//   HashRouter,
+//   Route,
+//   Switch,
+// } from "react-router-dom/cjs/react-router-dom.min";
 import Cakes from "./features/cakes";
 import Cake from "./features/cakes/cake";
 import SweetTable from "./features/sweetTable";
 import Pops from "./features/sweetTable/pop";
+import {BrowserRouter, Route,Switch } from "react-router-dom/cjs/react-router-dom.min";
 
 function App() {
   const toCake = ({ id, category } = { id: ":id", category: ":category" }) =>
@@ -23,7 +25,7 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <BrowserRouter>
+      <BrowserRouter >
         <Navigation
           ikony={BAZA.strona.nawigacja.ikonki}
           linki={BAZA.strona.nawigacja.linki}
