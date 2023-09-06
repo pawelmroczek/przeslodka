@@ -5,6 +5,7 @@ import {
   Name,
   Phone,
   StyledImg,
+  StyledListItem,
   StyledNavLink,
   StyledUl,
   Wrapper,
@@ -35,11 +36,11 @@ const Footer = () => {
         <LinksContainer>
           <StyledUl>
             {categories.map((kategoria) => (
-              <li onClick={scrollToTop}>
+              <StyledListItem onClick={scrollToTop} key={kategoria}>
                 <StyledNavLink to={"/torty/" + kategoria}>
                   {kategoria}
                 </StyledNavLink>
-              </li>
+              </StyledListItem>
             ))}
           </StyledUl>
         </LinksContainer>

@@ -7,7 +7,7 @@ const Map = () => (
     height="250"
     allowFullScreen="1"
     loading="lazy"
-    referrerpolicy="no-referrer-when-downgrade"
+    //referrerpolicy="no-referrer-when-downgrade"
   ></StyledMap>
 );
 

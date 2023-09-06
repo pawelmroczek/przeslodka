@@ -12,6 +12,10 @@ export const Wrapper = styled.div`
   }
 `;
 
+export const StyledListItem = styled.li`
+  cursor: pointer;
+`
+
 export const LinksContainer = styled.div`
   background-image: url(${cake});
   background-position: center;

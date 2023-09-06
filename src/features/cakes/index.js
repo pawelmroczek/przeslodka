@@ -41,7 +41,7 @@ const Cakes = () => {
       <CategoriesContainer>
         <AllCakes to={"/torty"}>ostatnie torty</AllCakes>
         {categories.map((kategoria) => (
-          <Category to={"/torty/" + kategoria}>{kategoria}</Category>
+          <Category key={kategoria} to={"/torty/" + kategoria}>{kategoria}</Category>
         ))}
       </CategoriesContainer>
       <TitleWithLines title={title} header={1} />
