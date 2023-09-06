@@ -6,6 +6,10 @@ export const CategoriesContainer = styled.div`
   flex-wrap: wrap;
   gap: 15px;
   padding: 20px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.phoneMedia}px) {
+    margin-top:60px;
+  }
 `;
 
 export const Category = styled(NavLink)`

@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom/cjs/react-router-dom";
-import { css, styled } from "styled-components";
+import styled ,{ css } from "styled-components";
 
 export const StyledTitle = styled.h2`
   color: black;
@@ -26,8 +26,8 @@ export const StyledButton = styled.button`
     color: black;
   }
 
-  ${({ left }) =>
-    left &&
+  ${({ $left }) =>
+    $left &&
     css`
       right: inherit;
       left: 0;

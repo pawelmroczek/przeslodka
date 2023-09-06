@@ -11,8 +11,8 @@ export const Wrapper = styled.div`
 export const StyledIteam = styled.li`
   margin: 20px;
   text-align: left;
-  ${({ icon }) =>
-    icon &&
+  ${({ $icon }) =>
+    $icon &&
     css`
       @media (max-width: ${({ theme }) => theme.breakpoints.phoneMedia}px) {
         text-align: center;
@@ -28,10 +28,10 @@ export const StyledUl = styled.ul`
   font-weight: 500;
   font-size: 20px;
   text-align: center;
-  display:none; 
+  display: none;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.phoneMedia}px) {
-    margin-right:-16px;
+    margin-right: -16px;
     margin-top: 70px;
     font-size: 30px;
     display: inline;
@@ -41,7 +41,7 @@ export const StyledUl = styled.ul`
     background-color: ${({ theme }) => theme.colors.pinkFlare};
     box-shadow: 0px 4px 12px 0px rgba(186, 199, 213, 0.3);
     border: solid white 1px;
-    border-top:none;
+    border-top: none;
 
     ${({ hidden }) =>
       hidden &&
@@ -49,6 +49,4 @@ export const StyledUl = styled.ul`
         display: none;
       `}
   }
-
- 
 `;

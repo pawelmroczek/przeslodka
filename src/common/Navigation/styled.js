@@ -51,8 +51,8 @@ export const StyledUl = styled.ul`
     display: none;
   }
 
-  ${({ icons }) =>
-    icons &&
+  ${({ $icons }) =>
+    $icons &&
     css`
       justify-content: flex-start;
       @media (max-width: ${({ theme }) => theme.breakpoints.phoneMedia}px) {

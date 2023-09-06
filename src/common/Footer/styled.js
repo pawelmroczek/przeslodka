@@ -1,4 +1,4 @@
-import { styled } from "styled-components";
+import styled  from "styled-components";
 import cake from "../../images/cake.webp";
 import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
 

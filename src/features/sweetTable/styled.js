@@ -6,8 +6,14 @@ export const CakesContainer = styled.div`
   flex-wrap: wrap;
   gap: 15px;
   justify-content: center;
+
+  
 `;
 
 export const Container = styled.div`
   padding-top: 20px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.phoneMedia}px) {
+    margin-top:80px;
+  }
 `;

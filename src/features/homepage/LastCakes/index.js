@@ -31,7 +31,7 @@ const LastCakes = () => {
         <TitleWithLines title={"ostatnie torty"} />
         <GalleryContainer>
           <StyledButton
-            left
+            $left
             disabled={counter > torty.length - 2}
             onClick={increase}
           >

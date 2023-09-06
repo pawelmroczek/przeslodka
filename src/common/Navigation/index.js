@@ -22,7 +22,7 @@ const Navigation = ({ ikony, linki }) => {
   return (
     <Wrapper>
       <StyledNav>
-        <StyledUl icons>
+        <StyledUl $icons>
           {ikony.map((ikona) => (
             <li key={ikona.href}>
               <a href={ikona.href}>{ikona.content}</a>

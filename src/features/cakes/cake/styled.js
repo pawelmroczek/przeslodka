@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
 import { styled } from "styled-components";
 
+
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -9,6 +10,10 @@ export const Container = styled.div`
   background-color: #f5e1e1;
   border-radius: 10px;
   padding: 10px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.phoneMedia}px) {
+    margin-top:80px;
+  }
 `;
 
 export const StyledImg = styled.img`

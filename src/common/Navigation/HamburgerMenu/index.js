@@ -36,7 +36,7 @@ const HamburgerMenu = ({ ikony, linki }) => {
           <StyledLink href="#kontakt">kontakt</StyledLink>
         </StyledIteam>
         {ikony.map((ikona) => (
-          <StyledIteam icon key={ikona.href}>
+          <StyledIteam $icon key={ikona.href}>
             <a href={ikona.href}>{ikona.content}</a>
           </StyledIteam>
         ))}
