@@ -36,7 +36,7 @@ const Cake = () => {
     <Container>
       <StyledImg
         src={
-          "/przeslodka/images/torty/" + cake.plik
+          "https://www.new.przeslodka.pl/images/torty/" + cake.plik
         }
       />
       <div>

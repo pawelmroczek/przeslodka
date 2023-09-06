@@ -29,7 +29,7 @@ const Pops = () => {
     <Container>
       <StyledImg
         src={
-          "https://pawelmroczek.github.io/przeslodka/images/torty/" + pop.plik
+          "https://www.new.przeslodka.pl/images/torty/" + pop.plik
         }
       />
       <div>
