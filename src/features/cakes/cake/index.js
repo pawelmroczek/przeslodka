@@ -13,6 +13,7 @@ import {
 import { useEffect } from "react";
 import { useSelector } from "react-redux";
 import { getCakeById } from "../../cakeSlice";
+import { scrollToTop } from "../../../common/scrollToTop";
 
 const Cake = () => {
   const { id } = useParams();
@@ -23,6 +24,7 @@ const Cake = () => {
     czesci[2] === "torty" ? "/torty" : "/" + czesci[1] + "/" + czesci[2];
 
   useEffect(() => {
+    scrollToTop()
     document.title = cake.metaTITLE;
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {

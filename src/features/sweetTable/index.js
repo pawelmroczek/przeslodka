@@ -4,9 +4,11 @@ import Tile from "./Tile"
 import { CakesContainer, Container } from "./styled"
 import { useSelector } from "react-redux"
 import { selectSweetTable } from "../cakeSlice"
+import { scrollToTop } from "../../common/scrollToTop"
 
 const SweetTable = ()=>{
   useEffect(()=>{
+    scrollToTop()
     if(document.title!=="Torty Piaseczno i Warszawa"){
       document.title="Torty Piaseczno i Warszawa"
     }

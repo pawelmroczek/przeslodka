@@ -39,19 +39,16 @@ const LastCakes = () => {
           </StyledButton>
           <StyledNavLink to={"/torty/torty/" + torty[counter].tytuł}>
             <StyledImg
-              onClick={scrollToTop}
               src={"/przeslodka/images/torty/" + torty[counter].plik}
             />
           </StyledNavLink>
           <StyledNavLink to={"/torty/torty/" + torty[counter - 1].tytuł}>
             <StyledImg
-              onClick={scrollToTop}
               src={"/przeslodka/images/torty/" + torty[counter - 1].plik}
             />
           </StyledNavLink>
           <StyledNavLink to={"/torty/torty/" + torty[counter - 2].tytuł}>
             <StyledImg
-              onClick={scrollToTop}
               src={"/przeslodka/images/torty/" + torty[counter - 2].plik}
             />
           </StyledNavLink>

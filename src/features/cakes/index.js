@@ -14,6 +14,7 @@ import {
   selectCakes,
   selectCategories,
 } from "../cakeSlice";
+import { scrollToTop } from "../../common/scrollToTop";
 
 const Cakes = () => {
   const location = useLocation();
@@ -23,6 +24,8 @@ const Cakes = () => {
   const allCakes = useSelector(selectCakes);
   const filtered = useSelector((state) => getCakesByCategory(state, title));
   const torty = title === "torty" ? allCakes.slice(0, 20) : filtered;
+
+  useEffect(scrollToTop,[category])
 
   useEffect(() => {
     if (document.title !== "Torty Piaseczno i Warszawa") {

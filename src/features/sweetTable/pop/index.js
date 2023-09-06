@@ -10,12 +10,14 @@ import {
 import { useEffect } from "react";
 import { useSelector } from "react-redux";
 import { getSweetById } from "../../cakeSlice";
+import { scrollToTop } from "../../../common/scrollToTop";
 
 const Pops = () => {
   const { id } = useParams();
   const pop = useSelector((state) => getSweetById(state, id));
 
   useEffect(() => {
+    scrollToTop()
     document.title = pop.metaTITLE;
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
