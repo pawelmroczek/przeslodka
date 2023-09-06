@@ -8,13 +8,19 @@ export const Wrapper = styled.div`
 `;
 
 export const StyledNav = styled.nav`
+  background-color: ${({ theme }) => theme.colors.pinkFlare};
+
   padding: 5px;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   @media (max-width: ${({ theme }) => theme.breakpoints.phoneMedia}px) {
-    //align-items:flex-start;
+    z-index: 1000; /* Dla warstwy nawigacji, aby była na wierzchu */
+    position: fixed; /* Ustawienie nawigacji jako elementu z pozycją stałą */
+    top: 0; /* Ustawienie nawigacji na górze ekranu */
+    left: 0;
+    right: 0;
   }
 `;
 

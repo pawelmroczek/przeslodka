@@ -2,9 +2,14 @@ import { styled } from "styled-components";
 import backgroundimg from "../../images/header-background.jpg";
 
 export const FirstImg = styled.div`
+ 
   background-image: url(${backgroundimg});
   background-size: cover;
   background-position: center;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.phoneMedia}px) {
+    margin-top:40px;
+  }
 `;
 
 export const StyledHeader = styled.header`

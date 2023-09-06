@@ -32,7 +32,7 @@ export const StyledUl = styled.ul`
 
   @media (max-width: ${({ theme }) => theme.breakpoints.phoneMedia}px) {
     margin-right:-16px;
-    margin-top: 80px;
+    margin-top: 70px;
     font-size: 30px;
     display: inline;
     position: absolute;

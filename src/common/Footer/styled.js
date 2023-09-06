@@ -74,7 +74,13 @@ export const Name = styled.h2`
 export const StyledNavLink = styled(NavLink)`
   text-decoration: none;
   color: white;
+
+  &:hover{
+    border-bottom:1px solid white;
+  }
 `;
 export const StyledImg = styled.img`
   width: 80%;
+
+  max-width:300px;
 `;

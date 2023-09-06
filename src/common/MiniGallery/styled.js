@@ -1,4 +1,4 @@
-import { styled } from "styled-components";
+import  styled  from "styled-components";
 import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
 
 export const StyledParagraph = styled.p`
@@ -33,4 +33,9 @@ export const Container = styled.div`
 export const StyledNavLink = styled(NavLink)`
   text-decoration: none;
   color: black;
+  width:30%;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.phoneMedia}px) {
+    width: 80%;
+  }
 `;
